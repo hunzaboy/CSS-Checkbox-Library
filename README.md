@@ -26,6 +26,7 @@ That's it.
 
 - [x] ~~Circles, Squares~~
 - [x] ~~Toggles~~
+- [ ] Browser Compatibility
 - [ ] CSS/HTML Code Snippet
 - [ ] Color Variations
 - [ ] CSS Animations
