@@ -11,3 +11,10 @@ A huge collection of pure css checkboxes.
 3. Size Variations
 4. Add more items...
 
+## Todo
+
+- [x] ~~Circles, Squares~~
+- [x] ~~Toggles~~
+- [x] CSS/HTML Code Snippet
+- [x] Color Variations
+- [x] CSS Animations
