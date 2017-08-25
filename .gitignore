@@ -1,0 +1,7 @@
+# Node
+node_modules
+demoSrc
+package.json
+src
+favicons
+gulpfile.js
