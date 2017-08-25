@@ -1,6 +1,8 @@
 # Tons of Checkboxes
 A huge collection of pure css checkboxes.
 
+<img src="https://hunzaboy.github.io/CSS-Checkboxes-Huge-Collection/screen.png">
+
 <a href="https://hunzaboy.github.io/CSS-Checkboxes-Huge-Collection/">Click Here for Demo</a>
 
 
