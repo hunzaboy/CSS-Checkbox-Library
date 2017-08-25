@@ -4,14 +4,6 @@ A huge collection of pure css checkboxes.
 <a href="https://hunzaboy.github.io/CSS-Checkboxes-Huge-Collection/">Click Here for Demo</a>
 
 
-## Todo
-
-- [x] ~~Circles, Squares~~
-- [x] ~~Toggles~~
-- [ ] CSS/HTML Code Snippet
-- [ ] Color Variations
-- [ ] CSS Animations
-
 
 ## How to use
 1. Import the `checkboxes.min.css` or `checkboxes.css` file from the `dist` folder.
@@ -25,3 +17,13 @@ A huge collection of pure css checkboxes.
 ```
 
 That's it. 
+
+
+
+## Todo
+
+- [x] ~~Circles, Squares~~
+- [x] ~~Toggles~~
+- [ ] CSS/HTML Code Snippet
+- [ ] Color Variations
+- [ ] CSS Animations
