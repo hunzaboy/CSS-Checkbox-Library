@@ -31,4 +31,5 @@ That's it.
 - [ ] Browser Compatibility
 - [ ] CSS/HTML Code Snippet
 - [ ] Color Variations
-- [ ] CSS Animations
+- [ ] More Animations
+- [ ] Just for Fun Toggles
