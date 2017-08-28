@@ -28,8 +28,7 @@ That's it.
 
 - [x] ~~Circles, Squares~~
 - [x] ~~Toggles~~
-- [ ] Browser Compatibility
-- [ ] CSS/HTML Code Snippet
+- [x] HTML Code Snippet
 - [ ] Color Variations
 - [ ] More Animations
 - [ ] Just for Fun Toggles
