@@ -68,6 +68,7 @@
   height: 1em;
   position: relative;
   cursor: pointer;
+  display: block;
 }
 
 .ckbx-style-2 label:before {
