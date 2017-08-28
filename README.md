@@ -22,6 +22,8 @@ A huge collection of pure css checkboxes.
 
 That's it. 
 
+<strong>You can checkout the <a href="https://hunzaboy.github.io/CSS-Checkbox-Library/">DEMO</a> to get HTML Code for each design. Just press the HTML button.</strong>
+
 
 
 ## Todo
