@@ -1,11 +1,11 @@
-<a href="https://hunzaboy.github.io/CSS-Checkboxes-Huge-Library/">Click Here for Demo</a>
+<a href="https://hunzaboy.github.io/CSS-Checkbox-Library/">Click Here for Demo</a>
 
 # Tons of Checkboxes
 A huge collection of pure css checkboxes.
 
 <img src="https://hunzaboy.github.io/CSS-Checkbox-Library/screen.png">
 
-<a href="https://hunzaboy.github.io/CSS-Checkboxes-Huge-Library/">Click Here for Demo</a>
+<a href="https://hunzaboy.github.io/CSS-Checkbox-Library/">Click Here for Demo</a>
 
 
 
