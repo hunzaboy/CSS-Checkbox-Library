@@ -787,6 +787,7 @@
   background: #F25F5C;
   border-radius: 50px;
   box-shadow: inset 0px 1px 1px rgba(171, 66, 63, 0.5);
+  letter-spacing: -2px \0/IE89;
 }
 
 .ckbx-style-15 label:after {
@@ -796,6 +797,7 @@
   height: 1em;
   border-radius: 50px;
   left: 0;
+  left: 0.05em \0/IE89;
   transition: all 0.2s ease;
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
   background: #fcfff4;
@@ -811,6 +813,15 @@
 .ckbx-style-15 input[type=checkbox]:checked + label:after {
   animation: switch-on .2s ease-out;
   left: 1.1em;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .ckbx-style-15 label:before {
+    letter-spacing: -2px;
+  }
+  .ckbx-style-15 label:after {
+    left: 0.05em;
+  }
 }
 
 @keyframes switch-on {
