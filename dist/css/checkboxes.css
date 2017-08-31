@@ -797,13 +797,16 @@
   height: 1em;
   border-radius: 50px;
   left: 0;
-  left: 0.05em \0/IE89;
+
+  left: 0.05em \0/IE8+9;
   transition: all 0.2s ease;
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
   background: #fcfff4;
   animation: switch-off .2s ease-out;
   z-index: 2;
 }
+
+
 
 .ckbx-style-15 input[type=checkbox]:checked + label:before {
   background: #70C1B3;
