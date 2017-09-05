@@ -720,7 +720,7 @@
   color: #fff;
   font-weight: bold;
   font-size: .6em;
-  line-height: 1.4;
+  line-height: 1.6;
   transition: all 0.2s ease;
   background: #F25F5C;
   left: 50%;
@@ -735,7 +735,7 @@
   width: 50%;
   text-align: center;
   color: rgba(255, 255, 255, 0.5);
-  line-height: 1.4;
+  line-height: 1.6;
   top: 0;
   bottom: 0;
   font-weight: bold;
@@ -773,7 +773,7 @@
 }
 
 .ckbx-style-15 label:before {
-  content: '\2714  \2718';
+  content: '\2714\2718';
   position: absolute;
   width: 2em;
   color: #fff;
@@ -787,7 +787,7 @@
   background: #F25F5C;
   border-radius: 50px;
   box-shadow: inset 0px 1px 1px rgba(171, 66, 63, 0.5);
-  letter-spacing: -2px \0/IE89;
+  letter-spacing: -1px \0/IE89;
 }
 
 .ckbx-style-15 label:after {
@@ -813,6 +813,18 @@
 .ckbx-style-15 input[type=checkbox]:checked + label:after {
   animation: switch-on .2s ease-out;
   left: 1.1em;
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+  .ckbx-style-15 label:before {
+    letter-spacing: 6px;
+  }
+}
+
+@-moz-document url-prefix() {
+  .ckbx-style-15 label:before {
+    letter-spacing: 6px;
+  }
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {

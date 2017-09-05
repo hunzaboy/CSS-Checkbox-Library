@@ -7,7 +7,8 @@ A huge collection of pure css checkboxes.
 
 <a href="https://hunzaboy.github.io/CSS-Checkbox-Library/">Click Here for Demo</a>
 
-
+## Compatible
+IE9+, Chrome 49+, Firefox 52+, Safari 5+
 
 ## How to use
 1. Import the `checkboxes.min.css` or `checkboxes.css` file from the `dist` folder.
