@@ -1,0 +1,38 @@
+{
+  "name": "css-checkbox-library",
+  "version": "1.1.0",
+  "description": "Pure CSS Checkboxes.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hunzaboy/CSS-Checkbox-Library.git"
+  },
+  "author": "Aslam Shah",
+  "license": "MIT",
+  "devDependencies": {
+    "bulma": "^0.4.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-connect": "^2.3.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-flatten": "^0.3.1",
+    "gulp-header": "^1.8.8",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.2.0",
+    "gulp-sourcemaps": "^2.2.0",
+    "rename": "^1.0.3"
+  },
+  "dependencies": {},
+  "bugs": {
+    "url": "https://github.com/hunzaboy/CSS-Checkbox-Library/issues"
+  },
+  "homepage": "https://github.com/hunzaboy/CSS-Checkbox-Library#readme",
+  "keywords": [
+    "css",
+    "checkbox"
+  ]
+}

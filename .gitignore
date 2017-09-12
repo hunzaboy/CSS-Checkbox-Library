@@ -1,7 +1,6 @@
 # Node
 node_modules
 demoSrc
-package.json
 package-lock.json
 src
 favicons

@@ -848,6 +848,106 @@
   }
 }
 
+.ckbx-style-16 {
+  font-size: 24px;
+}
+
+.ckbx-style-16 input[type=checkbox] {
+  visibility: hidden;
+  display: none;
+}
+
+.ckbx-style-16 label {
+  width: 2em;
+  height: 1em;
+  position: relative;
+  cursor: pointer;
+  display: block;
+}
+
+.ckbx-style-16 label:before {
+  content: '';
+  position: absolute;
+  width: 2em;
+  height: 1em;
+  transition: background 0.1s 0.1s ease;
+  border-radius: 4px;
+  background: #F25F5C;
+}
+
+.ckbx-style-16 label:after {
+  content: '';
+  position: absolute;
+  width: .6em;
+  height: .6em;
+  left: .2em;
+  top: .2em;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  background: #fcfff4;
+  z-index: 2;
+}
+
+.ckbx-style-16 input[type=checkbox]:checked + label:before {
+  background: #70C1B3;
+}
+
+.ckbx-style-16 input[type=checkbox]:checked + label:after {
+  left: 1.1em;
+}
+
+.ckbx-style-17 {
+  font-size: 24px;
+}
+
+.ckbx-style-17 input[type=checkbox] {
+  visibility: hidden;
+  display: none;
+}
+
+.ckbx-style-17 label {
+  width: 2em;
+  height: 1em;
+  position: relative;
+  cursor: pointer;
+  display: block;
+}
+
+.ckbx-style-17 label:before {
+  content: '';
+  position: absolute;
+  width: 2em;
+  height: 1em;
+  transition: background 0.1s 0.1s ease;
+  border-radius: 4px;
+  background: #4d4d4d;
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+}
+
+.ckbx-style-17 label:after {
+  content: '';
+  position: absolute;
+  width: .6em;
+  height: .6em;
+  left: .2em;
+  top: .2em;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  background: #F25F5C;
+  z-index: 2;
+}
+
+.ckbx-style-17 input[type=checkbox]:checked + label:before {
+  background: #333;
+}
+
+.ckbx-style-17 input[type=checkbox]:checked + label:after {
+  left: 1.1em;
+  background: #70C1B3;
+}
+
 .ckbx-circle-1 {
   font-size: 24px;
 }
@@ -1238,4 +1338,16 @@
 .ckbx-square-4 input[type=checkbox]:checked + label:after {
   border-color: #70C1B3;
   animation: stretch .2s ease-out;
+}
+
+[class^=ckbx].ckbx-small {
+  font-size: .5em;
+}
+
+[class^=ckbx].ckbx-large {
+  font-size: 1.5em;
+}
+
+[class^=ckbx].ckbx-xlarge {
+  font-size: 2.5em;
 }

@@ -33,6 +33,7 @@ That's it.
 - [x] ~~Circles, Squares~~
 - [x] ~~Toggles~~
 - [x] HTML Code Snippet
+- [x] Added Different Sizes
 - [ ] Color Variations
 - [ ] More Animations
 - [ ] Just for Fun Toggles
