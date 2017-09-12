@@ -11,8 +11,9 @@ A huge collection of pure css checkboxes.
 IE9+, Chrome 49+, Firefox 52+, Safari 5+
 
 ## How to use
-1. Import the `checkboxes.min.css` or `checkboxes.css` file from the `dist` folder.
-2. Use the checkbox design you like with the following markup. In the example below the class `ckbx-square-1` is important.
+1. Install via NPM  `npm i css-checkbox-library` or Download the Zip
+2. Import the `checkboxes.min.css` or `checkboxes.css` file from the `dist` folder.
+3. Use the checkbox design you like with the following markup. In the example below the class `ckbx-square-1` is important.
 
 ```HTML
 <div class="ckbx-square-1">
