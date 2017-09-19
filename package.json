@@ -1,6 +1,6 @@
 {
   "name": "css-checkbox-library",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Pure CSS Checkboxes.",
   "main": "dist/css/checkboxes.css",
   "scripts": {
@@ -13,7 +13,6 @@
   "author": "Aslam Shah",
   "license": "MIT",
   "devDependencies": {
-    "bulma": "^0.4.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-connect": "^2.3.1",
