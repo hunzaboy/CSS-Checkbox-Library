@@ -4,13 +4,18 @@
    MIT License
    git+https://github.com/hunzaboy/CSS-Checkbox-Library.git
 */
+input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+}
+
 .ckbx-style-1 {
   font-size: 24px;
 }
 
 .ckbx-style-1 input[type=checkbox] {
-  visibility: hidden;
-  display: none;
+  position: absolute;
+  opacity: 0;
 }
 
 .ckbx-style-1 label {
@@ -59,8 +64,8 @@
 }
 
 .ckbx-style-2 input[type=checkbox] {
-  visibility: hidden;
-  display: none;
+  position: absolute;
+  opacity: 0;
 }
 
 .ckbx-style-2 label {
@@ -106,8 +111,8 @@
 }
 
 .ckbx-style-3 input[type=checkbox] {
-  visibility: hidden;
-  display: none;
+  position: absolute;
+  opacity: 0;
 }
 
 .ckbx-style-3 label {
@@ -156,8 +161,8 @@
 }
 
 .ckbx-style-4 input[type=checkbox] {
-  visibility: hidden;
-  display: none;
+  position: absolute;
+  opacity: 0;
 }
 
 .ckbx-style-4 label {
@@ -206,8 +211,8 @@
 }
 
 .ckbx-style-5 input[type=checkbox] {
-  visibility: hidden;
-  display: none;
+  position: absolute;
+  opacity: 0;
 }
 
 .ckbx-style-5 label {
@@ -257,8 +262,8 @@
 }
 
 .ckbx-style-6 input[type=checkbox] {
-  visibility: hidden;
-  display: none;
+  position: absolute;
+  opacity: 0;
 }
 
 .ckbx-style-6 label {
@@ -308,8 +313,8 @@
 }
 
 .ckbx-style-7 input[type=checkbox] {
-  visibility: hidden;
-  display: none;
+  position: absolute;
+  opacity: 0;
 }
 
 .ckbx-style-7 label {
@@ -362,8 +367,8 @@
 }
 
 .ckbx-style-8 input[type=checkbox] {
-  visibility: hidden;
-  display: none;
+  position: absolute;
+  opacity: 0;
 }
 
 .ckbx-style-8 label {
@@ -439,8 +444,8 @@
 }
 
 .ckbx-style-9 input[type=checkbox] {
-  visibility: hidden;
-  display: none;
+  position: absolute;
+  opacity: 0;
 }
 
 .ckbx-style-9 label {
@@ -487,8 +492,8 @@
 }
 
 .ckbx-style-10 input[type=checkbox] {
-  visibility: hidden;
-  display: none;
+  position: absolute;
+  opacity: 0;
 }
 
 .ckbx-style-10 label {
@@ -536,8 +541,8 @@
 }
 
 .ckbx-style-11 input[type=checkbox] {
-  visibility: hidden;
-  display: none;
+  position: absolute;
+  opacity: 0;
 }
 
 .ckbx-style-11 label {
@@ -589,8 +594,8 @@
 }
 
 .ckbx-style-12 input[type=checkbox] {
-  visibility: hidden;
-  display: none;
+  position: absolute;
+  opacity: 0;
 }
 
 .ckbx-style-12 label {
@@ -640,8 +645,8 @@
 }
 
 .ckbx-style-13 input[type=checkbox] {
-  visibility: hidden;
-  display: none;
+  position: absolute;
+  opacity: 0;
 }
 
 .ckbx-style-13 label {
@@ -699,8 +704,8 @@
 }
 
 .ckbx-style-14 input[type=checkbox] {
-  visibility: hidden;
-  display: none;
+  position: absolute;
+  opacity: 0;
 }
 
 .ckbx-style-14 label {
@@ -760,8 +765,8 @@
 }
 
 .ckbx-style-15 input[type=checkbox] {
-  visibility: hidden;
-  display: none;
+  position: absolute;
+  opacity: 0;
 }
 
 .ckbx-style-15 label {
@@ -853,8 +858,8 @@
 }
 
 .ckbx-style-16 input[type=checkbox] {
-  visibility: hidden;
-  display: none;
+  position: absolute;
+  opacity: 0;
 }
 
 .ckbx-style-16 label {
@@ -902,8 +907,8 @@
 }
 
 .ckbx-style-17 input[type=checkbox] {
-  visibility: hidden;
-  display: none;
+  position: absolute;
+  opacity: 0;
 }
 
 .ckbx-style-17 label {
@@ -953,8 +958,8 @@
 }
 
 .ckbx-circle-1 input[type=checkbox] {
-  visibility: hidden;
-  display: none;
+  position: absolute;
+  opacity: 0;
 }
 
 .ckbx-circle-1 label {
@@ -998,8 +1003,8 @@
 }
 
 .ckbx-circle-2 input[type=checkbox] {
-  visibility: hidden;
-  display: none;
+  position: absolute;
+  opacity: 0;
 }
 
 .ckbx-circle-2 label {
@@ -1048,8 +1053,8 @@
 }
 
 .ckbx-circle-3 input[type=checkbox] {
-  visibility: hidden;
-  display: none;
+  position: absolute;
+  opacity: 0;
 }
 
 .ckbx-circle-3 label {
@@ -1106,8 +1111,8 @@
 }
 
 .ckbx-circle-4 input[type=checkbox] {
-  visibility: hidden;
-  display: none;
+  position: absolute;
+  opacity: 0;
 }
 
 .ckbx-circle-4 label {
@@ -1168,8 +1173,8 @@
 }
 
 .ckbx-square-1 input[type=checkbox] {
-  visibility: hidden;
-  display: none;
+  position: absolute;
+  opacity: 0;
 }
 
 .ckbx-square-1 label {
@@ -1211,8 +1216,8 @@
 }
 
 .ckbx-square-2 input[type=checkbox] {
-  visibility: hidden;
-  display: none;
+  position: absolute;
+  opacity: 0;
 }
 
 .ckbx-square-2 label {
@@ -1259,8 +1264,8 @@
 }
 
 .ckbx-square-3 input[type=checkbox] {
-  visibility: hidden;
-  display: none;
+  position: absolute;
+  opacity: 0;
 }
 
 .ckbx-square-3 label {
@@ -1303,8 +1308,8 @@
 }
 
 .ckbx-square-4 input[type=checkbox] {
-  visibility: hidden;
-  display: none;
+  position: absolute;
+  opacity: 0;
 }
 
 .ckbx-square-4 label {
