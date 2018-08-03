@@ -4,7 +4,7 @@
    MIT License
    git+https://github.com/hunzaboy/CSS-Checkbox-Library.git
 */
-input[type=checkbox] {
+div[class^="ckbx-style-"] input[type=checkbox] {
   position: absolute;
   opacity: 0;
 }
