@@ -3,7 +3,7 @@
 # Tons of Checkboxes
 A huge collection of pure css checkboxes.
 
-<img src="https://hunzaboy.github.io/CSS-Checkbox-Library/screen.png">
+<img src="https://raw.githubusercontent.com/hunzaboy/CSS-Checkbox-Library/master/screen.png">
 
 <a href="https://hunzaboy.github.io/CSS-Checkbox-Library/">Click Here for Demo</a>
 
