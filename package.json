@@ -1,11 +1,9 @@
 {
   "name": "css-checkbox-library",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Pure CSS Checkboxes.",
   "main": "dist/css/checkboxes.css",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "style": "dist/css/checkboxes.css",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hunzaboy/CSS-Checkbox-Library.git"
@@ -13,17 +11,23 @@
   "author": "Aslam Shah",
   "license": "MIT",
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.1",
-    "gulp-connect": "^2.3.1",
-    "gulp-cssnano": "^2.1.2",
-    "gulp-flatten": "^0.3.1",
-    "gulp-header": "^1.8.8",
-    "gulp-plumber": "^1.1.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.2.0",
-    "gulp-sourcemaps": "^2.2.0",
-    "rename": "^1.0.3"
+    "autoprefixer": "^9.7.6",
+    "clean-css-cli": "^4.3.0",
+    "node-sass": "^4.13.1",
+    "parcel-bundler": "^1.12.4",
+    "postcss-cli": "^7.1.0",
+    "rimraf": "^3.0.2"
+  },
+  "scripts": {
+    "build": "npm run build-clean && npm run build-sass && npm run build-autoprefix && npm run build-cleancss",
+    "build-autoprefix": "postcss --use autoprefixer --map false --output dist/css/checkboxes.css dist/css/checkboxes.css",
+    "build-cleancss": "cleancss -o dist/css/checkboxes.min.css dist/css/checkboxes.css",
+    "build-clean": "rimraf dist",
+    "build-sass": "node-sass --output-style expanded --source-map true src/scss/checkboxes.scss dist/css/checkboxes.css",
+    "deploy": "npm run build",
+    "start": "npm run build-sass -- --watch",
+    "start-demo": "parcel index.html -d docs --open",
+    "build-demo": "rimraf docs && parcel build index.html -d docs --public-url ./"
   },
   "dependencies": {},
   "bugs": {
