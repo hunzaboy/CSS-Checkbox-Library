@@ -27,7 +27,7 @@
     "deploy": "npm run build",
     "start": "npm run build-sass -- --watch",
     "start-demo": "parcel index.html -d docs --open",
-    "build-demo": "rimraf docs && parcel build index.html -d docs --public-url ./"
+    "build-demo": "parcel build index.html -d docs --public-url ./"
   },
   "dependencies": {},
   "bugs": {
