@@ -1,0 +1,271 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+html {
+  font-size: 24px;
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+
+body {
+  background: #f4f4f4; }
+
+h1,
+h2 {
+  font-weight: 300; }
+
+h5 {
+  font-weight: 300; }
+  h5 span {
+    background: #6a6b68;
+    padding: 5px;
+    border-radius: 4px;
+    color: #fff;
+    line-height: 1;
+    font-size: 80%;
+    display: inline-block;
+    margin-left: 5px; }
+
+h1 {
+  font-size: 2rem; }
+
+section {
+  padding: 1rem;
+  background: #f9f9f9; }
+  section h2 {
+    text-align: center; }
+    section h2 span {
+      font-size: 50%;
+      display: block;
+      max-width: 600px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 5px;
+      border-radius: 4px; }
+  section:nth-child(odd) {
+    background: #f0f0f0; }
+  section.other-projects {
+    background: #70c1b3; }
+    section.other-projects .projects {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap; }
+      section.other-projects .projects .single-project {
+        background: #f1f1f1;
+        border-radius: 4px;
+        width: 25%;
+        padding: 10px;
+        margin: 5px; }
+        section.other-projects .projects .single-project img {
+          max-width: 100%; }
+        section.other-projects .projects .single-project .project-title {
+          text-align: center;
+          color: #000;
+          margin-top: 0;
+          font-size: 1em;
+          font-weight: 300; }
+        section.other-projects .projects .single-project.gad {
+          background: transparent; }
+  section.usage {
+    background: #50514f;
+    color: #fff;
+    padding-top: 2em;
+    padding-bottom: 2em; }
+    section.usage a {
+      color: #ffe066; }
+    section.usage code {
+      background: #373736;
+      padding: 0 5px;
+      border-radius: 4px; }
+    section.usage .html {
+      background: #ffe066;
+      color: #50514f;
+      padding: 2px 4px;
+      border-radius: 4px; }
+  section.hero {
+    background: #52b0d8;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 50px; }
+    section.hero h1 {
+      margin: 0;
+      float: left; }
+      section.hero h1 span {
+        font-size: 50%;
+        background: #1b5b76;
+        padding: 2px 4px;
+        border-radius: 4px; }
+    section.hero .links {
+      float: right; }
+      section.hero .links svg {
+        float: left; }
+
+.flexbox section.hero h1,
+.flexbox section.hero .links {
+  float: none; }
+
+.flexbox section.hero .links {
+  display: flex;
+  width: 500px;
+  justify-content: flex-end; }
+  .flexbox section.hero .links a {
+    margin-left: 10px; }
+
+.content {
+  display: block; }
+  .content .item {
+    float: left;
+    height: 200px;
+    width: 280px;
+    background: #50514f;
+    margin: 0.5rem;
+    box-shadow: 0 0 5px #ccc;
+    position: relative; }
+    .content .item .dark,
+    .content .item .light {
+      padding: 38px 115px; }
+      .content .item .dark.lg,
+      .content .item .light.lg {
+        padding: 35px 89px; }
+    .content .item .light {
+      background: #fff; }
+    .content .item.light {
+      background: #ffffff; }
+    .content .item.special:after {
+      content: "\2605";
+      color: #ffe066;
+      position: absolute;
+      font-size: 1.2em;
+      left: 5px;
+      top: 5px; }
+    .content .item.text .light {
+      padding: 10px 20px;
+      text-align: center; }
+
+.flexbox .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+section {
+  clear: both; }
+
+footer {
+  font-weight: 100;
+  text-align: center; }
+  footer a {
+    color: #2e6a60;
+    text-decoration: none;
+    font-weight: inherit;
+    text-align: center; }
+
+.flexbox .item {
+  display: flex;
+  flex-direction: column;
+  position: relative; }
+  .flexbox .item .dark,
+  .flexbox .item .light {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0; }
+
+.btn {
+  background: #ffffff;
+  padding: 0.8em 1.6em;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #247ba0; }
+  .btn svg {
+    margin-right: 10px;
+    fill: #247ba0; }
+  .btn:hover {
+    background: #50514f;
+    color: #fff; }
+    .btn:hover svg {
+      fill: #fff; }
+
+.show-code,
+.new {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  font-size: 0.5em;
+  border: 0;
+  outline: none;
+  padding: 5px;
+  background: #ffe066;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-weight: bolder;
+  border-radius: 2px;
+  color: #50514f;
+  text-decoration: none;
+  text-transform: uppercase; }
+  .show-code:hover,
+  .new:hover {
+    background: #ffcb00; }
+
+.new {
+  right: auto;
+  left: 5px;
+  cursor: inherit;
+  background: #ffffff; }
+
+.code-modal:target {
+  display: flex; }
+
+.code-modal {
+  display: none;
+  position: fixed;
+  background: rgba(80, 81, 79, 0.9);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  right: 0;
+  z-index: 9; }
+  .code-modal .modal-content {
+    background: #fff;
+    flex-basis: 25vw;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    font-size: 1rem; }
+  .code-modal .modal-close {
+    text-decoration: none;
+    position: absolute;
+    right: 0;
+    bottom: 102%;
+    color: #fff;
+    padding: 5px; }
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 14px; }
+  .flexbox section.hero {
+    flex-direction: column; }
+    .flexbox section.hero h1 {
+      margin-bottom: 10px;
+      text-align: center; }
+      .flexbox section.hero h1 span {
+        display: block; }
+    .flexbox section.hero .links {
+      flex-direction: column;
+      width: auto; }
+      .flexbox section.hero .links .btn {
+        margin-left: 0;
+        margin-bottom: 5px;
+        justify-content: center; }
+  .flexbox section .content {
+    justify-content: center; } }
+
+.center {
+  text-align: center; }
+
+
+/*# sourceMappingURL=demo.feb49920.css.map */
