@@ -1,4 +1,4 @@
-input[type=checkbox] {
+div[class^="ckbx-style-"] input[type=checkbox] {
   position: absolute;
   opacity: 0;
 }
@@ -1414,4 +1414,4 @@ input[type=checkbox] {
 }
 
 
-/*# sourceMappingURL=checkboxes.8e60fa96.css.map */
+/*# sourceMappingURL=checkboxes.71b8a175.css.map */

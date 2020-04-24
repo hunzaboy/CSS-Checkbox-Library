@@ -1,6 +1,6 @@
 {
   "name": "css-checkbox-library",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "Pure CSS Checkboxes.",
   "main": "dist/css/checkboxes.css",
   "style": "dist/css/checkboxes.css",
