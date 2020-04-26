@@ -1,6 +1,6 @@
 @import "config";
 
-[class^="#{$checkbox}-style-"], [class^="#{$checkbox}-square-"], [class^="#{$checkbox}-circle-"] {
+[class^="#{$checkbox}-"] {
   font-size: $base-font-size;
 
   label {
@@ -24,7 +24,7 @@
     }
   }
 
-  input[type=checkbox] {
+  input[type="checkbox"] {
     position: absolute;
     opacity:  0;
   }
@@ -42,7 +42,7 @@
     }
   }
 
-  input[type=checkbox] {
+  input[type="checkbox"] {
     &:checked {
       + label {
         &:before {
