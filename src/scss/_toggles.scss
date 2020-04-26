@@ -1,997 +1,999 @@
-.#{$checkbox}-style-1 {
+.#{$checkbox}-style {
+  &-1 {
 
-  font-size: $base-font-size;
+    font-size: $base-font-size;
 
-  input[type=checkbox] {
-    position: absolute;
-    opacity:  0;
-  }
-
-  label {
-    width:    $toggle-style-width;
-    height:   $toggle-style-height;
-    position: relative;
-    cursor:   pointer;
-    display:  block;
-
-    &:before {
-      content:       '';
-      position:      absolute;
-      width:         2em;
-      height:        1em;
-      left:          0.1em;
-      transition:    background $base-easing-speed .1s $base-easeing;
-      background:    lighten($base-color, 10%);
-      border-radius: $border-radius-low;
-      box-shadow:    inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+    input[type=checkbox] {
+      position: absolute;
+      opacity:  0;
     }
 
-    &:after {
-      content:       '';
-      position:      absolute;
-      width:         1em;
-      height:        1em;
-      border-radius: $border-radius-low;
-      left:          0;
-      transition:    all $base-easing-speed*2 $base-easeing;
-      box-shadow:    0px 2px 5px 0px rgba(0, 0, 0, 0.3);
-      background:    $base-contrast;
-      z-index:       2;
-    }
-  }
+    label {
+      width:    $toggle-style-width;
+      height:   $toggle-style-height;
+      position: relative;
+      cursor:   pointer;
+      display:  block;
 
-  input[type=checkbox]:checked + label {
-
-    &:before {
-      background: $base-color;
-    }
-
-    &:after {
-      left: 1.1em;
-    }
-  }
-}
-
-.#{$checkbox}-style-2 {
-
-  font-size: $base-font-size;
-
-  input[type=checkbox] {
-    position: absolute;
-    opacity:  0;
-  }
-
-  label {
-    width:    $toggle-style-width;
-    height:   $toggle-style-height;
-    position: relative;
-    cursor:   pointer;
-    display:  block;
-
-    &:before {
-      content:    '';
-      position:   absolute;
-      width:      2em;
-      height:     1em;
-      transition: background $base-easing-speed .1s $base-easeing;
-      background: lighten($base-color, 10%);
-      box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
-    }
-
-    &:after {
-      content:    '';
-      position:   absolute;
-      width:      1em;
-      height:     1em;
-      left:       0;
-      transition: all $base-easing-speed*2 $base-easeing;
-      box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
-      background: $base-contrast;
-      z-index:    2;
-    }
-  }
-
-  input[type=checkbox]:checked + label {
-
-    &:before {
-      background: $base-color;
-    }
-
-    &:after {
-      left: 1.1em;
-    }
-  }
-}
-
-.#{$checkbox}-style-3 {
-
-  font-size: $base-font-size;
-
-  input[type=checkbox] {
-    position: absolute;
-    opacity:  0;
-  }
-
-  label {
-    width:    $toggle-style-width;
-    height:   $toggle-style-height;
-    position: relative;
-    cursor:   pointer;
-    display:  block;
-
-    &:before {
-      content:       '';
-      position:      absolute;
-      width:         2em;
-      height:        1em;
-      transition:    background $base-easing-speed .1s $base-easeing;
-      border-radius: $border-radius-medium;
-      background:    lighten($base-color, 10%);
-      box-shadow:    inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
-    }
-
-    &:after {
-      content:       '';
-      position:      absolute;
-      width:         .6em;
-      height:        .6em;
-      left:          .2em;
-      top:           .2em;
-      border-radius: $border-radius-medium;
-      transition:    all $base-easing-speed*2 $base-easeing;
-      box-shadow:    0px 2px 5px 0px rgba(0, 0, 0, 0.3);
-      background:    $base-contrast;
-      z-index:       2;
-    }
-  }
-
-  input[type=checkbox]:checked + label {
-
-    &:before {
-      background: $base-color;
-    }
-
-    &:after {
-      left: 1.1em;
-    }
-  }
-}
-
-.#{$checkbox}-style-4 {
-
-  font-size: $base-font-size;
-
-  input[type=checkbox] {
-    position: absolute;
-    opacity:  0;
-  }
-
-  label {
-    width:    $toggle-style-width;
-    height:   $toggle-style-height;
-    position: relative;
-    cursor:   pointer;
-    display:  block;
-
-    &:before {
-      content:       '';
-      position:      absolute;
-      width:         2em;
-      height:        1em;
-      transition:    background $base-easing-speed .1s $base-easeing;
-      border-radius: $border-radius-medium;
-      background:    lighten($base-color, 10%);
-      box-shadow:    inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
-    }
-
-    &:after {
-      content:       '';
-      position:      absolute;
-      width:         .6em;
-      height:        .6em;
-      left:          .2em;
-      top:           .2em;
-      border-radius: $border-radius-full;
-      transition:    all $base-easing-speed*2 $base-easeing;
-      box-shadow:    0px 2px 5px 0px rgba(0, 0, 0, 0.3);
-      background:    $base-contrast;
-      z-index:       2;
-    }
-  }
-
-  input[type=checkbox]:checked + label {
-
-    &:before {
-      background: $base-color;
-    }
-
-    &:after {
-      left: 1.1em;
-    }
-  }
-}
-
-.#{$checkbox}-style-5 {
-
-  font-size: $base-font-size;
-
-  input[type=checkbox] {
-    position: absolute;
-    opacity:  0;
-  }
-
-  label {
-    width:    $toggle-style-width;
-    height:   $toggle-style-height;
-    position: relative;
-    cursor:   pointer;
-    display:  block;
-
-    &:before {
-      content:       '';
-      position:      absolute;
-      width:         2em;
-      height:        .5em;
-      left:          0.1em;
-      top:           .25em;
-      transition:    background $base-easing-speed .1s $base-easeing;
-      background:    lighten($base-color, 10%);
-      border-radius: $border-radius-low;
-      box-shadow:    inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
-    }
-
-    &:after {
-      content:       '';
-      position:      absolute;
-      width:         1em;
-      height:        1em;
-      border-radius: $border-radius-low;
-      left:          0;
-      transition:    all $base-easing-speed*2 $base-easeing;
-      box-shadow:    0px 2px 5px 0px rgba(0, 0, 0, 0.3);
-      background:    $base-contrast;
-      z-index:       2;
-    }
-  }
-
-  input[type=checkbox]:checked + label {
-
-    &:before {
-      background: $base-color;
-    }
-
-    &:after {
-      left: 1.1em;
-    }
-  }
-}
-
-.#{$checkbox}-style-6 {
-
-  font-size: $base-font-size;
-
-  input[type=checkbox] {
-    position: absolute;
-    opacity:  0;
-  }
-
-  label {
-    width:    $toggle-style-width;
-    height:   $toggle-style-height;
-    position: relative;
-    cursor:   pointer;
-    display:  block;
-
-    &:before {
-      content:       '';
-      position:      absolute;
-      width:         2em;
-      height:        1em;
-      left:          0.1em;
-      transition:    background $base-easing-speed .1s $base-easeing;
-      background:    lighten($base-color, 10%);
-      border-radius: $border-radius-low;
-      box-shadow:    inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
-    }
-
-    &:after {
-      content:       '';
-      position:      absolute;
-      width:         1em;
-      height:        1em;
-      border-radius: $border-radius-low;
-      left:          -.1em;
-      transition:    all $base-easing-speed*2 $base-easeing;
-      box-shadow:    0 0 0 5px $base-contrast inset;
-      background:    lighten($base-color, 10%);
-      z-index:       2;
-    }
-  }
-
-  input[type=checkbox]:checked + label {
-
-    &:before {
-      background: $base-color;
-    }
-
-    &:after {
-      left:       1.1em;
-      background: $base-color;
-    }
-  }
-}
-
-.#{$checkbox}-style-7 {
-
-  font-size: $base-font-size;
-
-  input[type=checkbox] {
-    position: absolute;
-    opacity:  0;
-  }
-
-  label {
-    width:    $toggle-style-width;
-    height:   $toggle-style-height;
-    position: relative;
-    cursor:   pointer;
-    display:  block;
-
-    &:before {
-      content:       '';
-      position:      absolute;
-      width:         2em;
-      height:        1em;
-      left:          0.1em;
-      transition:    background $base-easing-speed .1s $base-easeing;
-      background:    lighten($base-color, 10%);
-      border-radius: $border-radius-low;
-      box-shadow:    inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
-    }
-
-    &:after {
-      content:       '';
-      position:      absolute;
-      width:         .8em;
-      height:        .8em;
-      border-radius: $border-radius-full;
-      left:          .2em;
-      top:           .1em;
-      transition:    all $base-easing-speed*2 $base-easeing;
-      box-shadow:    0 0 0 5px $base-contrast inset;
-      background:    lighten($base-color, 10%);
-      z-index:       2;
-      animation:     switch-off .3s ease-out;
-    }
-  }
-
-  input[type=checkbox]:checked + label {
-
-    &:before {
-      background: $base-color;
-    }
-
-    &:after {
-      left:       1.2em;
-      background: $base-color;
-      animation:  switch-on .3s ease-out;
-    }
-  }
-}
-
-.#{$checkbox}-style-8 {
-
-  font-size: $base-font-size;
-
-  input[type=checkbox] {
-    position: absolute;
-    opacity:  0;
-  }
-
-  label {
-    width:    $toggle-style-width;
-    height:   $toggle-style-height;
-    position: relative;
-    cursor:   pointer;
-    display:  block;
-
-    &:before {
-      content:       '';
-      position:      absolute;
-      width:         2em;
-      height:        1em;
-      left:          0.1em;
-      transition:    background $base-easing-speed $base-easeing;
-      background:    $red;
-      border-radius: $border-radius-low;
-      box-shadow:    inset 0px 1px 1px rgba(171, 66, 63, 0.5);
-    }
-
-    &:after {
-      content:       '';
-      position:      absolute;
-      width:         1em;
-      height:        1em;
-      border-radius: $border-radius-low;
-      left:          0;
-      transition:    all $base-easing-speed*2 $base-easeing;
-      box-shadow:    0px 2px 5px 0px rgba(0, 0, 0, 0.3);
-      background:    $base-contrast;
-      animation:     switch-off .2s ease-out;
-      z-index:       2;
-    }
-  }
-
-  input[type=checkbox]:checked + label {
-
-    &:before {
-      background: $green;
-      box-shadow: inset 0px 1px 1px rgba(84, 152, 140, 0.5);
-    }
-
-    &:after {
-      animation: switch-on .2s ease-out;
-      left:      1.1em;
-    }
-  }
-}
-
-.#{$checkbox}-style-9 {
-  width:     3em !important;
-  font-size: $base-font-size;
-  position:  relative;
-
-  &:before,
-  &:after {
-    position:    absolute;
-    font-size:   .6em;
-    color:       #fff;
-    font-weight: bold;
-    text-align:  center;
-  }
-
-  &:before {
-    content: 'ON';
-    left:    0;
-    z-index: 1;
-    left:    0.4em;
-    top:     .2em;
-  }
-
-  &:after {
-    content: 'OFF';
-    right:   .4em;
-    top:     .2em;
-  }
-
-  input[type=checkbox] {
-    position: absolute;
-    opacity:  0;
-  }
-
-  label {
-    width:    $toggle-style-width;
-    height:   $toggle-style-height;
-    position: relative;
-    cursor:   pointer;
-    display:  block;
-
-    &:before {
-      content:    '';
-      position:   absolute;
-      width:      3em;
-      height:     1em;
-      transition: background $base-easing-speed $base-easeing;
-      background: $red;
-      box-shadow: inset 0px 1px 1px rgba(171, 66, 63, 0.5);
-    }
-
-    &:after {
-      content:    '';
-      position:   absolute;
-      width:      1.5em;
-      height:     1em;
-      left:       0;
-      transition: all $base-easing-speed*2 $base-easeing;
-      box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
-      background: $base-contrast;
-      z-index:    2;
-    }
-  }
-
-  input[type=checkbox]:checked + label {
-
-    &:before {
-      background: $green;
-      box-shadow: inset 0px 1px 1px rgba(84, 152, 140, 0.5);
-    }
-
-    &:after {
-      left: 1.5em;
-    }
-  }
-}
-
-.#{$checkbox}-style-10 {
-
-  font-size: $base-font-size;
-
-  input[type=checkbox] {
-    position: absolute;
-    opacity:  0;
-  }
-
-  label {
-    width:    $toggle-style-width;
-    height:   $toggle-style-height;
-    position: relative;
-    cursor:   pointer;
-    display:  block;
-
-    &:before {
-      content:    '';
-      position:   absolute;
-      width:      2em;
-      height:     .5em;
-      left:       0.1em;
-      top:        .25em;
-      transition: background $base-easing-speed .1s $base-easeing;
-      background: lighten($base-color, 10%);
-      box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
-    }
-
-    &:after {
-      content:    '';
-      position:   absolute;
-      width:      1em;
-      height:     1em;
-      left:       0;
-      transition: all $base-easing-speed*2 $base-easeing;
-      box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
-      background: $base-contrast;
-      z-index:    2;
-    }
-  }
-
-  input[type=checkbox]:checked + label {
-
-    &:before {
-      background: $base-color;
-    }
-
-    &:after {
-      left: 1.1em;
-    }
-  }
-}
-
-.#{$checkbox}-style-11 {
-
-  font-size: $base-font-size;
-
-  input[type=checkbox] {
-    position: absolute;
-    opacity:  0;
-  }
-
-  label {
-    width:    $toggle-style-width;
-    height:   $toggle-style-height;
-    position: relative;
-    cursor:   pointer;
-    display:  block;
-
-    &:before {
-      content:       '';
-      position:      absolute;
-      width:         2em;
-      height:        .5em;
-      left:          0.1em;
-      top:           .25em;
-      transition:    background $base-easing-speed .1s $base-easeing;
-      background:    $red;
-      border-radius: $border-radius-low; // box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
-    }
-
-    &:after {
-      content:       '';
-      position:      absolute;
-      width:         1em;
-      height:        1em;
-      left:          0;
-      transition:    all $base-easing-speed*2 $base-easeing;
-      box-shadow:    0px 2px 5px 0px rgba(0, 0, 0, 0.3);
-      background:    $red;
-      border-radius: $border-radius-full;
-      z-index:       2;
-      animation:     switch-off .4s ease-out forwards;
-    }
-  }
-
-  input[type=checkbox]:checked + label {
-
-    &:before {
-      background: $green;
-    }
-
-    &:after {
-      left:       1.1em;
-      background: $green;
-      animation:  switch-on .4s ease-out forwards;
-    }
-  }
-}
-
-.#{$checkbox}-style-12 {
-
-  font-size: $base-font-size;
-
-  input[type=checkbox] {
-    position: absolute;
-    opacity:  0;
-  }
-
-  label {
-    width:    $toggle-style-width;
-    height:   $toggle-style-height;
-    position: relative;
-    cursor:   pointer;
-    display:  block;
-
-    &:before {
-      content:    '';
-      position:   absolute;
-      width:      2em;
-      height:     .5em;
-      left:       0.1em;
-      top:        .25em;
-      transition: background $base-easing-speed .1s $base-easeing;
-      background: $red; // box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
-    }
-
-    &:after {
-      content:    '';
-      position:   absolute;
-      width:      1em;
-      height:     1em;
-      left:       0;
-      transition: all $base-easing-speed*2 $base-easeing;
-      box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
-      background: $red;
-      z-index:    2;
-      animation:  switch-off .4s ease-out forwards;
-    }
-  }
-
-  input[type=checkbox]:checked + label {
-
-    &:before {
-      background: $green;
-    }
-
-    &:after {
-      left:       1.1em;
-      background: $green;
-      animation:  switch-on .4s ease-out forwards;
-    }
-  }
-}
-
-.#{$checkbox}-style-13 {
-
-  font-size: $base-font-size;
-
-  input[type=checkbox] {
-    position: absolute;
-    opacity:  0;
-  }
-
-  label {
-    width:    $toggle-style-width;
-    height:   $toggle-style-height;
-    position: relative;
-    cursor:   pointer;
-    display:  block;
-
-    &:before {
-      content:       '';
-      position:      absolute;
-      width:         2em;
-      height:        1em;
-      left:          0.1em;
-      transition:    background $base-easing-speed .1s $base-easeing;
-      background:    $red;
-      border-radius: $border-radius-low;
-      box-shadow:    inset 0px 1px 1px rgba(171, 66, 63, 0.5);
-    }
-
-    &:after {
-      content:       '';
-      position:      absolute;
-      width:         .8em;
-      height:        .8em;
-      border-radius: $border-radius-full;
-      left:          .2em;
-      top:           .1em;
-      transition:    all $base-easing-speed*2 $base-easeing;
-      box-shadow:    0 0 0 5px $base-contrast inset;
-      background:    $red;
-      z-index:       2;
-      animation:     switch-off .3s ease-out;
-    }
-  }
-
-  input[type=checkbox]:checked + label {
-
-    &:before {
-      background: $green;
-      box-shadow: inset 0px 1px 1px rgba(84, 152, 140, 0.5);
-    }
-
-    &:after {
-      left:       1.2em;
-      background: $green;
-      animation:  switch-on .3s ease-out;
-    }
-  }
-}
-
-.#{$checkbox}-style-14 {
-  font-size:     $base-font-size;
-  position:      relative;
-  padding:       3px;
-  background:    $base-color;
-  border-radius: $border-radius-medium;
-
-  input[type=checkbox] {
-    position: absolute;
-    opacity:  0;
-  }
-
-  label {
-    width:      4em;
-    height:     1em;
-    position:   relative;
-    cursor:     pointer;
-    display:    block;
-    background: $base-color;
-
-    &:before {
-      content:       'OFF';
-      position:      absolute;
-      width:         50%;
-      text-align:    center;
-      color:         #fff;
-      font-weight:   bold;
-      font-size:     .6em;
-      line-height:   1.6;
-      transition:    all $base-easing-speed*2 $base-easeing;
-      background:    $red;
-      left:          50%;
-      bottom:        0;
-      top:           0;
-      border-radius: $border-radius-medium;
-    }
-
-    &:after {
-      content:       'ON';
-      position:      absolute;
-      width:         50%;
-      text-align:    center;
-      color:         rgba(255, 255, 255, .5);
-      line-height:   1.6;
-      top:           0;
-      bottom:        0;
-      font-weight:   bold;
-      font-size:     .6em;
-      border-radius: $border-radius-medium;
-      transition:    all $base-easing-speed*2 $base-easeing;
-      background:    $base-color;
-    }
-  }
-
-  input[type=checkbox]:checked + label {
-
-    &:before {
-      background: $base-color;
-      color:      rgba(255, 255, 255, .5);
-    }
-
-    &:after {
-      background: $green;
-      color:      #fff;
-    }
-  }
-}
-
-.#{$checkbox}-style-15 {
-
-  font-size: $base-font-size;
-
-  input[type=checkbox] {
-    position: absolute;
-    opacity:  0;
-  }
-
-
-  label {
-    width:    $toggle-style-width;
-    height:   $toggle-style-height;
-    position: relative;
-    cursor:   pointer;
-    display:  block;
-
-    &:before {
-      content:        '\2714\2718';
-      position:       absolute;
-      width:          2em;
-      color:          #fff;
-      font-size:      .8em;
-      top:            0;
-      bottom:         0;
-      padding-left:   .25em;
-      padding-right:  .25em;
-      left:           0.1em;
-      transition:     background $base-easing-speed $base-easeing;
-      background:     $red;
-      border-radius:  $border-radius-low;
-      box-shadow:     inset 0px 1px 1px rgba(171, 66, 63, 0.5);
-      letter-spacing: -1px \0/
-                      IE8+9;
-      @media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: .001dpcm) {
-        letter-spacing: 6px;
-      }
-
-      @-moz-document url-prefix() {
-        letter-spacing: 6px;
-      }
-    }
-
-    &:after {
-      content:       '';
-      position:      absolute;
-      width:         1em;
-      height:        1em;
-      border-radius: $border-radius-low;
-      left:          0;
-      left:          0.05em \0/
-                     IE8+9;
-      transition:    all $base-easing-speed*2 $base-easeing;
-      box-shadow:    0px 2px 5px 0px rgba(0, 0, 0, 0.3);
-      background:    $base-contrast;
-      animation:     switch-off .2s ease-out;
-      z-index:       2;
-    }
-
-    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
       &:before {
-        letter-spacing: -2px;
+        content:       '';
+        position:      absolute;
+        width:         2em;
+        height:        1em;
+        left:          0.1em;
+        transition:    background $base-easing-speed .1s $base-easeing;
+        background:    lighten($base-color, 10%);
+        border-radius: $border-radius-low;
+        box-shadow:    inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
       }
 
       &:after {
-        left: 0.05em;
+        content:       '';
+        position:      absolute;
+        width:         1em;
+        height:        1em;
+        border-radius: $border-radius-low;
+        left:          0;
+        transition:    all $base-easing-speed*2 $base-easeing;
+        box-shadow:    0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+        background:    $base-contrast;
+        z-index:       2;
+      }
+    }
+
+    input[type=checkbox]:checked + label {
+
+      &:before {
+        background: $base-color;
+      }
+
+      &:after {
+        left: 1.1em;
       }
     }
   }
 
-  input[type=checkbox]:checked + label {
+  &-2 {
+
+    font-size: $base-font-size;
+
+    input[type=checkbox] {
+      position: absolute;
+      opacity:  0;
+    }
+
+    label {
+      width:    $toggle-style-width;
+      height:   $toggle-style-height;
+      position: relative;
+      cursor:   pointer;
+      display:  block;
+
+      &:before {
+        content:    '';
+        position:   absolute;
+        width:      2em;
+        height:     1em;
+        transition: background $base-easing-speed .1s $base-easeing;
+        background: lighten($base-color, 10%);
+        box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+      }
+
+      &:after {
+        content:    '';
+        position:   absolute;
+        width:      1em;
+        height:     1em;
+        left:       0;
+        transition: all $base-easing-speed*2 $base-easeing;
+        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+        background: $base-contrast;
+        z-index:    2;
+      }
+    }
+
+    input[type=checkbox]:checked + label {
+
+      &:before {
+        background: $base-color;
+      }
+
+      &:after {
+        left: 1.1em;
+      }
+    }
+  }
+
+  &-3 {
+
+    font-size: $base-font-size;
+
+    input[type=checkbox] {
+      position: absolute;
+      opacity:  0;
+    }
+
+    label {
+      width:    $toggle-style-width;
+      height:   $toggle-style-height;
+      position: relative;
+      cursor:   pointer;
+      display:  block;
+
+      &:before {
+        content:       '';
+        position:      absolute;
+        width:         2em;
+        height:        1em;
+        transition:    background $base-easing-speed .1s $base-easeing;
+        border-radius: $border-radius-medium;
+        background:    lighten($base-color, 10%);
+        box-shadow:    inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+      }
+
+      &:after {
+        content:       '';
+        position:      absolute;
+        width:         .6em;
+        height:        .6em;
+        left:          .2em;
+        top:           .2em;
+        border-radius: $border-radius-medium;
+        transition:    all $base-easing-speed*2 $base-easeing;
+        box-shadow:    0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+        background:    $base-contrast;
+        z-index:       2;
+      }
+    }
+
+    input[type=checkbox]:checked + label {
+
+      &:before {
+        background: $base-color;
+      }
+
+      &:after {
+        left: 1.1em;
+      }
+    }
+  }
+
+  &-4 {
+
+    font-size: $base-font-size;
+
+    input[type=checkbox] {
+      position: absolute;
+      opacity:  0;
+    }
+
+    label {
+      width:    $toggle-style-width;
+      height:   $toggle-style-height;
+      position: relative;
+      cursor:   pointer;
+      display:  block;
+
+      &:before {
+        content:       '';
+        position:      absolute;
+        width:         2em;
+        height:        1em;
+        transition:    background $base-easing-speed .1s $base-easeing;
+        border-radius: $border-radius-medium;
+        background:    lighten($base-color, 10%);
+        box-shadow:    inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+      }
+
+      &:after {
+        content:       '';
+        position:      absolute;
+        width:         .6em;
+        height:        .6em;
+        left:          .2em;
+        top:           .2em;
+        border-radius: $border-radius-full;
+        transition:    all $base-easing-speed*2 $base-easeing;
+        box-shadow:    0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+        background:    $base-contrast;
+        z-index:       2;
+      }
+    }
+
+    input[type=checkbox]:checked + label {
+
+      &:before {
+        background: $base-color;
+      }
+
+      &:after {
+        left: 1.1em;
+      }
+    }
+  }
+
+  &-5 {
+
+    font-size: $base-font-size;
+
+    input[type=checkbox] {
+      position: absolute;
+      opacity:  0;
+    }
+
+    label {
+      width:    $toggle-style-width;
+      height:   $toggle-style-height;
+      position: relative;
+      cursor:   pointer;
+      display:  block;
+
+      &:before {
+        content:       '';
+        position:      absolute;
+        width:         2em;
+        height:        .5em;
+        left:          0.1em;
+        top:           .25em;
+        transition:    background $base-easing-speed .1s $base-easeing;
+        background:    lighten($base-color, 10%);
+        border-radius: $border-radius-low;
+        box-shadow:    inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+      }
+
+      &:after {
+        content:       '';
+        position:      absolute;
+        width:         1em;
+        height:        1em;
+        border-radius: $border-radius-low;
+        left:          0;
+        transition:    all $base-easing-speed*2 $base-easeing;
+        box-shadow:    0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+        background:    $base-contrast;
+        z-index:       2;
+      }
+    }
+
+    input[type=checkbox]:checked + label {
+
+      &:before {
+        background: $base-color;
+      }
+
+      &:after {
+        left: 1.1em;
+      }
+    }
+  }
+
+  &-6 {
+
+    font-size: $base-font-size;
+
+    input[type=checkbox] {
+      position: absolute;
+      opacity:  0;
+    }
+
+    label {
+      width:    $toggle-style-width;
+      height:   $toggle-style-height;
+      position: relative;
+      cursor:   pointer;
+      display:  block;
+
+      &:before {
+        content:       '';
+        position:      absolute;
+        width:         2em;
+        height:        1em;
+        left:          0.1em;
+        transition:    background $base-easing-speed .1s $base-easeing;
+        background:    lighten($base-color, 10%);
+        border-radius: $border-radius-low;
+        box-shadow:    inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+      }
+
+      &:after {
+        content:       '';
+        position:      absolute;
+        width:         1em;
+        height:        1em;
+        border-radius: $border-radius-low;
+        left:          -.1em;
+        transition:    all $base-easing-speed*2 $base-easeing;
+        box-shadow:    0 0 0 5px $base-contrast inset;
+        background:    lighten($base-color, 10%);
+        z-index:       2;
+      }
+    }
+
+    input[type=checkbox]:checked + label {
+
+      &:before {
+        background: $base-color;
+      }
+
+      &:after {
+        left:       1.1em;
+        background: $base-color;
+      }
+    }
+  }
+
+  &-7 {
+
+    font-size: $base-font-size;
+
+    input[type=checkbox] {
+      position: absolute;
+      opacity:  0;
+    }
+
+    label {
+      width:    $toggle-style-width;
+      height:   $toggle-style-height;
+      position: relative;
+      cursor:   pointer;
+      display:  block;
+
+      &:before {
+        content:       '';
+        position:      absolute;
+        width:         2em;
+        height:        1em;
+        left:          0.1em;
+        transition:    background $base-easing-speed .1s $base-easeing;
+        background:    lighten($base-color, 10%);
+        border-radius: $border-radius-low;
+        box-shadow:    inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+      }
+
+      &:after {
+        content:       '';
+        position:      absolute;
+        width:         .8em;
+        height:        .8em;
+        border-radius: $border-radius-full;
+        left:          .2em;
+        top:           .1em;
+        transition:    all $base-easing-speed*2 $base-easeing;
+        box-shadow:    0 0 0 5px $base-contrast inset;
+        background:    lighten($base-color, 10%);
+        z-index:       2;
+        animation:     switch-off .3s ease-out;
+      }
+    }
+
+    input[type=checkbox]:checked + label {
+
+      &:before {
+        background: $base-color;
+      }
+
+      &:after {
+        left:       1.2em;
+        background: $base-color;
+        animation:  switch-on .3s ease-out;
+      }
+    }
+  }
+
+  &-8 {
+
+    font-size: $base-font-size;
+
+    input[type=checkbox] {
+      position: absolute;
+      opacity:  0;
+    }
+
+    label {
+      width:    $toggle-style-width;
+      height:   $toggle-style-height;
+      position: relative;
+      cursor:   pointer;
+      display:  block;
+
+      &:before {
+        content:       '';
+        position:      absolute;
+        width:         2em;
+        height:        1em;
+        left:          0.1em;
+        transition:    background $base-easing-speed $base-easeing;
+        background:    $red;
+        border-radius: $border-radius-low;
+        box-shadow:    inset 0px 1px 1px rgba(171, 66, 63, 0.5);
+      }
+
+      &:after {
+        content:       '';
+        position:      absolute;
+        width:         1em;
+        height:        1em;
+        border-radius: $border-radius-low;
+        left:          0;
+        transition:    all $base-easing-speed*2 $base-easeing;
+        box-shadow:    0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+        background:    $base-contrast;
+        animation:     switch-off .2s ease-out;
+        z-index:       2;
+      }
+    }
+
+    input[type=checkbox]:checked + label {
+
+      &:before {
+        background: $green;
+        box-shadow: inset 0px 1px 1px rgba(84, 152, 140, 0.5);
+      }
+
+      &:after {
+        animation: switch-on .2s ease-out;
+        left:      1.1em;
+      }
+    }
+  }
+
+  &-9 {
+    width:     3em !important;
+    font-size: $base-font-size;
+    position:  relative;
+
+    &:before,
+    &:after {
+      position:    absolute;
+      font-size:   .6em;
+      color:       #fff;
+      font-weight: bold;
+      text-align:  center;
+    }
 
     &:before {
-      background: $green;
-      box-shadow: inset 0px 1px 1px rgba(84, 152, 140, 0.5);
+      content: 'ON';
+      left:    0;
+      z-index: 1;
+      left:    0.4em;
+      top:     .2em;
     }
 
     &:after {
-      animation: switch-on .2s ease-out;
-      left:      1.1em;
-    }
-  }
-}
-
-.#{$checkbox}-style-16 {
-
-  font-size: $base-font-size;
-
-  input[type=checkbox] {
-    position: absolute;
-    opacity:  0;
-  }
-
-  label {
-    width:    $toggle-style-width;
-    height:   $toggle-style-height;
-    position: relative;
-    cursor:   pointer;
-    display:  block;
-
-    &:before {
-      content:       '';
-      position:      absolute;
-      width:         2em;
-      height:        1em;
-      transition:    background $base-easing-speed .1s $base-easeing;
-      border-radius: $border-radius-medium;
-      background:    $red;
+      content: 'OFF';
+      right:   .4em;
+      top:     .2em;
     }
 
-    &:after {
-      content:       '';
-      position:      absolute;
-      width:         .6em;
-      height:        .6em;
-      left:          .2em;
-      top:           .2em;
-      border-radius: $border-radius-medium;
-      transition:    all $base-easing-speed*2 $base-easeing;
-      box-shadow:    0px 2px 5px 0px rgba(0, 0, 0, 0.3);
-      background:    $base-contrast;
-      z-index:       2;
-    }
-  }
-
-  input[type=checkbox]:checked + label {
-
-    &:before {
-      background: $green;
+    input[type=checkbox] {
+      position: absolute;
+      opacity:  0;
     }
 
-    &:after {
-      left: 1.1em;
-    }
-  }
-}
+    label {
+      width:    $toggle-style-width;
+      height:   $toggle-style-height;
+      position: relative;
+      cursor:   pointer;
+      display:  block;
 
-.#{$checkbox}-style-17 {
+      &:before {
+        content:    '';
+        position:   absolute;
+        width:      3em;
+        height:     1em;
+        transition: background $base-easing-speed $base-easeing;
+        background: $red;
+        box-shadow: inset 0px 1px 1px rgba(171, 66, 63, 0.5);
+      }
 
-  font-size: $base-font-size;
-
-  input[type=checkbox] {
-    position: absolute;
-    opacity:  0;
-  }
-
-  label {
-    width:    $toggle-style-width;
-    height:   $toggle-style-height;
-    position: relative;
-    cursor:   pointer;
-    display:  block;
-
-    &:before {
-      content:       '';
-      position:      absolute;
-      width:         2em;
-      height:        1em;
-      transition:    background $base-easing-speed .1s $base-easeing;
-      border-radius: $border-radius-medium;
-      background:    lighten($base-color, 10%);
-      box-shadow:    inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+      &:after {
+        content:    '';
+        position:   absolute;
+        width:      1.5em;
+        height:     1em;
+        left:       0;
+        transition: all $base-easing-speed*2 $base-easeing;
+        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+        background: $base-contrast;
+        z-index:    2;
+      }
     }
 
-    &:after {
-      content:       '';
-      position:      absolute;
-      width:         .6em;
-      height:        .6em;
-      left:          .2em;
-      top:           .2em;
-      border-radius: $border-radius-medium;
-      transition:    all $base-easing-speed*2 $base-easeing;
-      box-shadow:    0px 2px 5px 0px rgba(0, 0, 0, 0.3);
-      background:    $red;
-      z-index:       2;
+    input[type=checkbox]:checked + label {
+
+      &:before {
+        background: $green;
+        box-shadow: inset 0px 1px 1px rgba(84, 152, 140, 0.5);
+      }
+
+      &:after {
+        left: 1.5em;
+      }
     }
   }
 
-  input[type=checkbox]:checked + label {
+  &-10 {
 
-    &:before {
+    font-size: $base-font-size;
+
+    input[type=checkbox] {
+      position: absolute;
+      opacity:  0;
+    }
+
+    label {
+      width:    $toggle-style-width;
+      height:   $toggle-style-height;
+      position: relative;
+      cursor:   pointer;
+      display:  block;
+
+      &:before {
+        content:    '';
+        position:   absolute;
+        width:      2em;
+        height:     .5em;
+        left:       0.1em;
+        top:        .25em;
+        transition: background $base-easing-speed .1s $base-easeing;
+        background: lighten($base-color, 10%);
+        box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+      }
+
+      &:after {
+        content:    '';
+        position:   absolute;
+        width:      1em;
+        height:     1em;
+        left:       0;
+        transition: all $base-easing-speed*2 $base-easeing;
+        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+        background: $base-contrast;
+        z-index:    2;
+      }
+    }
+
+    input[type=checkbox]:checked + label {
+
+      &:before {
+        background: $base-color;
+      }
+
+      &:after {
+        left: 1.1em;
+      }
+    }
+  }
+
+  &-11 {
+
+    font-size: $base-font-size;
+
+    input[type=checkbox] {
+      position: absolute;
+      opacity:  0;
+    }
+
+    label {
+      width:    $toggle-style-width;
+      height:   $toggle-style-height;
+      position: relative;
+      cursor:   pointer;
+      display:  block;
+
+      &:before {
+        content:       '';
+        position:      absolute;
+        width:         2em;
+        height:        .5em;
+        left:          0.1em;
+        top:           .25em;
+        transition:    background $base-easing-speed .1s $base-easeing;
+        background:    $red;
+        border-radius: $border-radius-low; // box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+      }
+
+      &:after {
+        content:       '';
+        position:      absolute;
+        width:         1em;
+        height:        1em;
+        left:          0;
+        transition:    all $base-easing-speed*2 $base-easeing;
+        box-shadow:    0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+        background:    $red;
+        border-radius: $border-radius-full;
+        z-index:       2;
+        animation:     switch-off .4s ease-out forwards;
+      }
+    }
+
+    input[type=checkbox]:checked + label {
+
+      &:before {
+        background: $green;
+      }
+
+      &:after {
+        left:       1.1em;
+        background: $green;
+        animation:  switch-on .4s ease-out forwards;
+      }
+    }
+  }
+
+  &-12 {
+
+    font-size: $base-font-size;
+
+    input[type=checkbox] {
+      position: absolute;
+      opacity:  0;
+    }
+
+    label {
+      width:    $toggle-style-width;
+      height:   $toggle-style-height;
+      position: relative;
+      cursor:   pointer;
+      display:  block;
+
+      &:before {
+        content:    '';
+        position:   absolute;
+        width:      2em;
+        height:     .5em;
+        left:       0.1em;
+        top:        .25em;
+        transition: background $base-easing-speed .1s $base-easeing;
+        background: $red; // box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+      }
+
+      &:after {
+        content:    '';
+        position:   absolute;
+        width:      1em;
+        height:     1em;
+        left:       0;
+        transition: all $base-easing-speed*2 $base-easeing;
+        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+        background: $red;
+        z-index:    2;
+        animation:  switch-off .4s ease-out forwards;
+      }
+    }
+
+    input[type=checkbox]:checked + label {
+
+      &:before {
+        background: $green;
+      }
+
+      &:after {
+        left:       1.1em;
+        background: $green;
+        animation:  switch-on .4s ease-out forwards;
+      }
+    }
+  }
+
+  &-13 {
+
+    font-size: $base-font-size;
+
+    input[type=checkbox] {
+      position: absolute;
+      opacity:  0;
+    }
+
+    label {
+      width:    $toggle-style-width;
+      height:   $toggle-style-height;
+      position: relative;
+      cursor:   pointer;
+      display:  block;
+
+      &:before {
+        content:       '';
+        position:      absolute;
+        width:         2em;
+        height:        1em;
+        left:          0.1em;
+        transition:    background $base-easing-speed .1s $base-easeing;
+        background:    $red;
+        border-radius: $border-radius-low;
+        box-shadow:    inset 0px 1px 1px rgba(171, 66, 63, 0.5);
+      }
+
+      &:after {
+        content:       '';
+        position:      absolute;
+        width:         .8em;
+        height:        .8em;
+        border-radius: $border-radius-full;
+        left:          .2em;
+        top:           .1em;
+        transition:    all $base-easing-speed*2 $base-easeing;
+        box-shadow:    0 0 0 5px $base-contrast inset;
+        background:    $red;
+        z-index:       2;
+        animation:     switch-off .3s ease-out;
+      }
+    }
+
+    input[type=checkbox]:checked + label {
+
+      &:before {
+        background: $green;
+        box-shadow: inset 0px 1px 1px rgba(84, 152, 140, 0.5);
+      }
+
+      &:after {
+        left:       1.2em;
+        background: $green;
+        animation:  switch-on .3s ease-out;
+      }
+    }
+  }
+
+  &-14 {
+    font-size:     $base-font-size;
+    position:      relative;
+    padding:       3px;
+    background:    $base-color;
+    border-radius: $border-radius-medium;
+
+    input[type=checkbox] {
+      position: absolute;
+      opacity:  0;
+    }
+
+    label {
+      width:      4em;
+      height:     1em;
+      position:   relative;
+      cursor:     pointer;
+      display:    block;
       background: $base-color;
+
+      &:before {
+        content:       'OFF';
+        position:      absolute;
+        width:         50%;
+        text-align:    center;
+        color:         #fff;
+        font-weight:   bold;
+        font-size:     .6em;
+        line-height:   1.6;
+        transition:    all $base-easing-speed*2 $base-easeing;
+        background:    $red;
+        left:          50%;
+        bottom:        0;
+        top:           0;
+        border-radius: $border-radius-medium;
+      }
+
+      &:after {
+        content:       'ON';
+        position:      absolute;
+        width:         50%;
+        text-align:    center;
+        color:         rgba(255, 255, 255, .5);
+        line-height:   1.6;
+        top:           0;
+        bottom:        0;
+        font-weight:   bold;
+        font-size:     .6em;
+        border-radius: $border-radius-medium;
+        transition:    all $base-easing-speed*2 $base-easeing;
+        background:    $base-color;
+      }
     }
 
-    &:after {
-      left:       1.1em;
-      background: $green;
+    input[type=checkbox]:checked + label {
+
+      &:before {
+        background: $base-color;
+        color:      rgba(255, 255, 255, .5);
+      }
+
+      &:after {
+        background: $green;
+        color:      #fff;
+      }
+    }
+  }
+
+  &-15 {
+
+    font-size: $base-font-size;
+
+    input[type=checkbox] {
+      position: absolute;
+      opacity:  0;
+    }
+
+
+    label {
+      width:    $toggle-style-width;
+      height:   $toggle-style-height;
+      position: relative;
+      cursor:   pointer;
+      display:  block;
+
+      &:before {
+        content:        '\2714\2718';
+        position:       absolute;
+        width:          2em;
+        color:          #fff;
+        font-size:      .8em;
+        top:            0;
+        bottom:         0;
+        padding-left:   .25em;
+        padding-right:  .25em;
+        left:           0.1em;
+        transition:     background $base-easing-speed $base-easeing;
+        background:     $red;
+        border-radius:  $border-radius-low;
+        box-shadow:     inset 0px 1px 1px rgba(171, 66, 63, 0.5);
+        letter-spacing: -1px \0/
+                        IE8+9;
+        @media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: .001dpcm) {
+          letter-spacing: 6px;
+        }
+
+        @-moz-document url-prefix() {
+          letter-spacing: 6px;
+        }
+      }
+
+      &:after {
+        content:       '';
+        position:      absolute;
+        width:         1em;
+        height:        1em;
+        border-radius: $border-radius-low;
+        left:          0;
+        left:          0.05em \0/
+                       IE8+9;
+        transition:    all $base-easing-speed*2 $base-easeing;
+        box-shadow:    0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+        background:    $base-contrast;
+        animation:     switch-off .2s ease-out;
+        z-index:       2;
+      }
+
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        &:before {
+          letter-spacing: -2px;
+        }
+
+        &:after {
+          left: 0.05em;
+        }
+      }
+    }
+
+    input[type=checkbox]:checked + label {
+
+      &:before {
+        background: $green;
+        box-shadow: inset 0px 1px 1px rgba(84, 152, 140, 0.5);
+      }
+
+      &:after {
+        animation: switch-on .2s ease-out;
+        left:      1.1em;
+      }
+    }
+  }
+
+  &-16 {
+
+    font-size: $base-font-size;
+
+    input[type=checkbox] {
+      position: absolute;
+      opacity:  0;
+    }
+
+    label {
+      width:    $toggle-style-width;
+      height:   $toggle-style-height;
+      position: relative;
+      cursor:   pointer;
+      display:  block;
+
+      &:before {
+        content:       '';
+        position:      absolute;
+        width:         2em;
+        height:        1em;
+        transition:    background $base-easing-speed .1s $base-easeing;
+        border-radius: $border-radius-medium;
+        background:    $red;
+      }
+
+      &:after {
+        content:       '';
+        position:      absolute;
+        width:         .6em;
+        height:        .6em;
+        left:          .2em;
+        top:           .2em;
+        border-radius: $border-radius-medium;
+        transition:    all $base-easing-speed*2 $base-easeing;
+        box-shadow:    0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+        background:    $base-contrast;
+        z-index:       2;
+      }
+    }
+
+    input[type=checkbox]:checked + label {
+
+      &:before {
+        background: $green;
+      }
+
+      &:after {
+        left: 1.1em;
+      }
+    }
+  }
+
+  &-17 {
+
+    font-size: $base-font-size;
+
+    input[type=checkbox] {
+      position: absolute;
+      opacity:  0;
+    }
+
+    label {
+      width:    $toggle-style-width;
+      height:   $toggle-style-height;
+      position: relative;
+      cursor:   pointer;
+      display:  block;
+
+      &:before {
+        content:       '';
+        position:      absolute;
+        width:         2em;
+        height:        1em;
+        transition:    background $base-easing-speed .1s $base-easeing;
+        border-radius: $border-radius-medium;
+        background:    lighten($base-color, 10%);
+        box-shadow:    inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+      }
+
+      &:after {
+        content:       '';
+        position:      absolute;
+        width:         .6em;
+        height:        .6em;
+        left:          .2em;
+        top:           .2em;
+        border-radius: $border-radius-medium;
+        transition:    all $base-easing-speed*2 $base-easeing;
+        box-shadow:    0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+        background:    $red;
+        z-index:       2;
+      }
+    }
+
+    input[type=checkbox]:checked + label {
+
+      &:before {
+        background: $base-color;
+      }
+
+      &:after {
+        left:       1.1em;
+        background: $green;
+      }
     }
   }
 }
