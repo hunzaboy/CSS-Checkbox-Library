@@ -6,12 +6,14 @@
     &:before {
       width:      2em;
       height:     1em;
+      background: lighten($base-color, 10%);
       box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, 0.2);
     }
 
     &:after {
       z-index:    2;
       box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+      background: $base-contrast;
     }
   }
 
@@ -31,20 +33,35 @@
 }
 
 .#{$checkbox}-style {
+  &-1, &-2, &-5, &-6, &-8, &-10, &-11, &-12, &-15 {
+    label {
+      &:after {
+        width:  1em;
+        height: 1em;
+        left:   0;
+      }
+    }
+  }
+
+  &-3, &-4, &-16, &-17 {
+    label {
+      &:after {
+        left:          .2em;
+        top:           .2em;
+        border-radius: $border-radius-medium;
+      }
+    }
+  }
+
   &-1 {
     label {
       &:before {
         left:          0.1em;
-        background:    lighten($base-color, 10%);
         border-radius: $border-radius-low;
       }
 
       &:after {
-        width:         1em;
-        height:        1em;
         border-radius: $border-radius-low;
-        left:          0;
-        background:    $base-contrast;
       }
     }
   }
@@ -52,14 +69,9 @@
   &-2 {
     label {
       &:before {
-        background: lighten($base-color, 10%);
       }
 
       &:after {
-        width:      1em;
-        height:     1em;
-        left:       0;
-        background: $base-contrast;
       }
     }
   }
@@ -68,14 +80,9 @@
     label {
       &:before {
         border-radius: $border-radius-medium;
-        background:    lighten($base-color, 10%);
       }
 
       &:after {
-        left:          .2em;
-        top:           .2em;
-        border-radius: $border-radius-medium;
-        background:    $base-contrast;
       }
     }
   }
@@ -84,14 +91,10 @@
     label {
       &:before {
         border-radius: $border-radius-medium;
-        background:    lighten($base-color, 10%);
       }
 
       &:after {
-        left:          .2em;
-        top:           .2em;
         border-radius: $border-radius-full;
-        background:    $base-contrast;
       }
     }
   }
@@ -102,16 +105,11 @@
         height:        .5em;
         left:          0.1em;
         top:           .25em;
-        background:    lighten($base-color, 10%);
         border-radius: $border-radius-low;
       }
 
       &:after {
-        width:         1em;
-        height:        1em;
         border-radius: $border-radius-low;
-        left:          0;
-        background:    $base-contrast;
       }
     }
   }
@@ -120,13 +118,10 @@
     label {
       &:before {
         left:          0.1em;
-        background:    lighten($base-color, 10%);
         border-radius: $border-radius-low;
       }
 
       &:after {
-        width:         1em;
-        height:        1em;
         border-radius: $border-radius-low;
         left:          -.1em;
         box-shadow:    0 0 0 5px $base-contrast inset;
@@ -145,7 +140,6 @@
     label {
       &:before {
         left:          0.1em;
-        background:    lighten($base-color, 10%);
         border-radius: $border-radius-low;
       }
 
@@ -181,11 +175,7 @@
       }
 
       &:after {
-        width:         1em;
-        height:        1em;
         border-radius: $border-radius-low;
-        left:          0;
-        background:    $base-contrast;
         animation:     switch-off .2s ease-out;
       }
     }
@@ -236,10 +226,9 @@
       }
 
       &:after {
-        width:      1.5em;
-        height:     1em;
-        left:       0;
-        background: $base-contrast;
+        width:  1.5em;
+        height: 1em;
+        left:   0;
       }
     }
 
@@ -258,17 +247,12 @@
   &-10 {
     label {
       &:before {
-        height:     .5em;
-        left:       0.1em;
-        top:        .25em;
-        background: lighten($base-color, 10%);
+        height: .5em;
+        left:   0.1em;
+        top:    .25em;
       }
 
       &:after {
-        width:      1em;
-        height:     1em;
-        left:       0;
-        background: $base-contrast;
       }
     }
   }
@@ -284,9 +268,6 @@
       }
 
       &:after {
-        width:         1em;
-        height:        1em;
-        left:          0;
         background:    $red;
         border-radius: $border-radius-full;
         animation:     switch-off .4s ease-out forwards;
@@ -316,9 +297,6 @@
       }
 
       &:after {
-        width:      1em;
-        height:     1em;
-        left:       0;
         background: $red;
         animation:  switch-off .4s ease-out forwards;
       }
@@ -458,11 +436,7 @@
       }
 
       &:after {
-        width:         1em;
-        height:        1em;
         border-radius: $border-radius-low;
-        left:          0;
-        background:    $base-contrast;
         animation:     switch-off .2s ease-out;
       }
 
@@ -498,10 +472,7 @@
       }
 
       &:after {
-        left:          .2em;
-        top:           .2em;
-        border-radius: $border-radius-medium;
-        background:    $base-contrast;
+
       }
     }
 
@@ -516,14 +487,10 @@
     label {
       &:before {
         border-radius: $border-radius-medium;
-        background:    lighten($base-color, 10%);
       }
 
       &:after {
-        left:          .2em;
-        top:           .2em;
-        border-radius: $border-radius-medium;
-        background:    $red;
+        background: $red;
       }
     }
 
@@ -533,4 +500,5 @@
       }
     }
   }
+
 }
