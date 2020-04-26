@@ -1,28 +1,27 @@
-$brown: #50514F !default;
-$yellow: #FFE066 !default;
-$green: #70C1B3 !default;
-$turquoise: #247BA0 !default;
-$blue: #247BA0 !default;
-$red: #F25F5C !default;
-$light: #FFFFFF !default;
+$brown:                #50514F !default;
+$yellow:               #FFE066 !default;
+$green:                #70C1B3 !default;
+$turquoise:            #247BA0 !default;
+$blue:                 #247BA0 !default;
+$red:                  #F25F5C !default;
+$light:                #FFFFFF !default;
 
 
+$base-font-size:       24px;
+$base-easeing:         ease;
+$base-easing-speed:    .1s;
 
-$base-font-size: 24px;
-$base-easeing: ease;
-$base-easing-speed: .1s;
+$base-color:           #333;
+$base-contrast:        #fcfff4;
 
-$base-color: #333;
-$base-contrast: #fcfff4;
-
-$border-radius-full: 100%;
+$border-radius-full:   100%;
 $border-radius-medium: 4px;
-$border-radius-low: 50px;
+$border-radius-low:    50px;
 
-$toggle-style-width: 2em;
-$toggle-style-height: 1em;
+$toggle-style-width:   2em;
+$toggle-style-height:  1em;
 
-$circle-style-width: 1em;
-$circle-style-height: 1em;
+$circle-style-width:   1em;
+$circle-style-height:  1em;
 
-$checkbox: 'ckbx' !default;
+$checkbox:             'ckbx' !default;
