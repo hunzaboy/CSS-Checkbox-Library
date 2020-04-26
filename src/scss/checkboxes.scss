@@ -1,9 +1,10 @@
-div[class^="ckbx-style-"] input[type=checkbox] {
+@import "config";
+
+div[class^="#{$checkbox}-style-"] input[type=checkbox] {
     position: absolute;
     opacity: 0;
 }
 
-@import "config";
 @import "toggles";
 @import "circles";
 @import "squares";
