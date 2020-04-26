@@ -1,143 +1,53 @@
 @import "config";
 
 [class^="#{$checkbox}-style-"], [class^="#{$checkbox}-square-"], [class^="#{$checkbox}-circle-"] {
-
-}
-
-[class^="#{$checkbox}-style-"] {
-  font-size: $base-font-size;
-
-  label {
-    width:    $toggle-style-width;
-    height:   $toggle-style-height;
-    position: relative;
-    cursor:   pointer;
-    display:  block;
-
-    &:before {
-      content:    '';
-      position:   absolute;
-      width:      2em;
-      height:     1em;
-      transition: background $base-easing-speed .1s $base-easeing;
-      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, 0.2);
-    }
-
-    &:after {
-      content:    '';
-      position:   absolute;
-      width:      .6em;
-      height:     .6em;
-      transition: all $base-easing-speed*2 $base-easeing;
-      z-index:    2;
-      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
-    }
-  }
-
-  input[type=checkbox] {
-    position: absolute;
-    opacity:  0;
-
-    &:checked {
-      + label {
-        &:before {
-          background: $base-color;
-        }
-
-        &:after {
-          left: 1.1em;
-        }
-      }
-    }
-  }
-}
-
-[class^="#{$checkbox}-circle-"] {
   font-size: $base-font-size;
 
   label {
     position: relative;
     cursor:   pointer;
     display:  block;
-    width:    $circle-style-width;
-    height:   $circle-style-height;
+
+    &:before, &:after {
+      content:  '';
+      position: absolute;
+    }
 
     &:before {
-      content:       '';
-      position:      absolute;
-      width:         1em;
-      height:        1em;
-      transition:    background $base-easing-speed .1s $base-easeing;
-      border-radius: $border-radius-full;
-      box-shadow:    0 2px 5px 0 rgba(0, 0, 0, 0.3);
-    }
-
-    &:after {
-      content:       '';
-      position:      absolute;
-      width:         .6em;
-      height:        .6em;
-      border-radius: $border-radius-full;
-      transition:    all $base-easing-speed*2 $base-easeing;
-      left:          .2em;
-      top:           .2em;
-      background:    $red;
-      z-index:       2;
-
-    }
-  }
-
-  input[type=checkbox] {
-    position: absolute;
-    opacity:  0;
-
-    &:checked {
-      + label {
-        &:before {
-        }
-
-        &:after {
-          background: $green;
-        }
-      }
-    }
-  }
-}
-
-[class^="#{$checkbox}-square-"] {
-  font-size: $base-font-size;
-
-  label {
-    position: relative;
-    cursor:   pointer;
-    display:  block;
-    width:    $circle-style-width;
-    height:   $circle-style-height;
-
-    &:before {
-      content:    "";
-      position:   absolute;
-      width:      1em;
-      height:     1em;
       transition: background $base-easing-speed 0.1s $base-easeing;
-      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
     }
 
     &:after {
-      content:    "";
-      position:   absolute;
       width:      0.6em;
       height:     0.6em;
       transition: all $base-easing-speed * 2 $base-easeing;
     }
   }
 
-  input[type="checkbox"] {
+  input[type=checkbox] {
     position: absolute;
     opacity:  0;
+  }
+}
 
+[class^="#{$checkbox}-circle-"], [class^="#{$checkbox}-square-"] {
+  label {
+    width:  $circle-style-width;
+    height: $circle-style-height;
+
+    &:before {
+      width:      1em;
+      height:     1em;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  input[type=checkbox] {
     &:checked {
       + label {
+        &:before {
+        }
+
         &:after {
           background: $green;
         }
@@ -146,6 +56,7 @@
   }
 }
 
+@import "keyframes";
 @import "toggles";
 @import "circles";
 @import "squares";

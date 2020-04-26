@@ -1,3 +1,13 @@
+[class^="#{$checkbox}-square-"] {
+  label {
+    &:before {
+    }
+
+    &:after {
+    }
+  }
+}
+
 .#{$checkbox} {
   &-square-1 {
     label {

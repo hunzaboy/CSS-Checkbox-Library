@@ -1,4 +1,18 @@
-@import "config";
+[class^="#{$checkbox}-circle-"] {
+  label {
+    &:before {
+      border-radius: $border-radius-full;
+    }
+
+    &:after {
+      border-radius: $border-radius-full;
+      left:          .2em;
+      top:           .2em;
+      background:    $red;
+      z-index:       2;
+    }
+  }
+}
 
 .#{$checkbox}-circle-1 {
   label {
@@ -70,37 +84,5 @@
       animation:    stretch .2s ease-out;
       background:   unset;
     }
-  }
-}
-
-@keyframes switch-on-circle {
-
-  50% {
-    transform: scale(1.3);
-  }
-}
-
-@keyframes switch-off-circle {
-
-  50% {
-    transform: scale(.3);
-  }
-}
-
-@keyframes stretch {
-  50% {
-    transform: scaleX(.3);
-  }
-  100% {
-    transform: scaleX(1.3);
-  }
-}
-
-@keyframes stretchback {
-  50% {
-    transform: scaleX(.3);
-  }
-  100% {
-    transform: scaleX(1.3);
   }
 }
