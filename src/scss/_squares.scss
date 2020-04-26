@@ -77,8 +77,8 @@
       &:after {
         background: transparent;
         border:     0.2em solid $red;
-        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
-        animation:  stretchback 0.2s ease-out;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+        animation:  stretch 0.2s ease-out;
       }
     }
 
