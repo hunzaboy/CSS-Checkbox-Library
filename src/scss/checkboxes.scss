@@ -1,9 +1,63 @@
-div[class^="ckbx-style-"] input[type=checkbox] {
-  position: absolute;
-  opacity:  0;
+@import "config";
+
+[class^="#{$checkbox}-style-"], [class^="#{$checkbox}-square-"], [class^="#{$checkbox}-circle-"] {
+
 }
 
-@import "config";
+[class^="#{$checkbox}-style-"] {
+  font-size: $base-font-size;
+
+  label {
+    width:    $toggle-style-width;
+    height:   $toggle-style-height;
+    position: relative;
+    cursor:   pointer;
+    display:  block;
+
+    &:before {
+      content:    '';
+      position:   absolute;
+      width:      2em;
+      height:     1em;
+      transition: background $base-easing-speed .1s $base-easeing;
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, 0.2);
+    }
+
+    &:after {
+      content:    '';
+      position:   absolute;
+      width:      .6em;
+      height:     .6em;
+      transition: all $base-easing-speed*2 $base-easeing;
+      z-index:    2;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  input[type=checkbox] {
+    position: absolute;
+    opacity:  0;
+
+    &:checked {
+      + label {
+        &:before {
+          background: $base-color;
+        }
+
+        &:after {
+          left: 1.1em;
+        }
+      }
+    }
+  }
+}
+
+[class^="#{$checkbox}-circle-"] {
+}
+
+[class^="#{$checkbox}-square-"] {
+}
+
 @import "toggles";
 @import "circles";
 @import "squares";
