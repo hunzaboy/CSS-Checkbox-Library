@@ -37,7 +37,7 @@
       }
     }
 
-    input[type=checkbox]:checked + label {
+    input[type="checkbox"]:checked + label {
       &:after {
         width:     1em;
         height:    1em;
@@ -79,7 +79,7 @@
       }
     }
 
-    input[type=checkbox]:checked + label {
+    input[type="checkbox"]:checked + label {
       &:after {
         border-color: $green;
         animation:    stretch .2s ease-out;

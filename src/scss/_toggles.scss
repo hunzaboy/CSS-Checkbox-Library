@@ -15,7 +15,7 @@
     }
   }
 
-  input[type=checkbox] {
+  input[type="checkbox"] {
     &:checked {
       + label {
         &:before {
@@ -134,7 +134,7 @@
       }
     }
 
-    input[type=checkbox]:checked + label {
+    input[type="checkbox"]:checked + label {
       &:after {
         background: $base-color;
       }
@@ -161,7 +161,7 @@
       }
     }
 
-    input[type=checkbox]:checked + label {
+    input[type="checkbox"]:checked + label {
       &:after {
         left:       1.2em;
         background: $base-color;
@@ -171,7 +171,6 @@
   }
 
   &-8 {
-
     label {
       &:before {
         left:          0.1em;
@@ -191,8 +190,7 @@
       }
     }
 
-    input[type=checkbox]:checked + label {
-
+    input[type="checkbox"]:checked + label {
       &:before {
         background: $green;
         box-shadow: inset 0 1px 1px rgba(84, 152, 140, 0.5);
@@ -245,8 +243,7 @@
       }
     }
 
-    input[type=checkbox]:checked + label {
-
+    input[type="checkbox"]:checked + label {
       &:before {
         background: $green;
         box-shadow: inset 0 1px 1px rgba(84, 152, 140, 0.5);
@@ -296,8 +293,7 @@
       }
     }
 
-    input[type=checkbox]:checked + label {
-
+    input[type="checkbox"]:checked + label {
       &:before {
         background: $green;
       }
@@ -328,8 +324,7 @@
       }
     }
 
-    input[type=checkbox]:checked + label {
-
+    input[type="checkbox"]:checked + label {
       &:before {
         background: $green;
       }
@@ -362,8 +357,7 @@
       }
     }
 
-    input[type=checkbox]:checked + label {
-
+    input[type="checkbox"]:checked + label {
       &:before {
         background: $green;
         box-shadow: inset 0 1px 1px rgba(84, 152, 140, 0.5);
@@ -424,8 +418,7 @@
       }
     }
 
-    input[type=checkbox]:checked + label {
-
+    input[type="checkbox"]:checked + label {
       &:before {
         background: $base-color;
         color:      rgba(255, 255, 255, .5);
@@ -484,8 +477,7 @@
       }
     }
 
-    input[type=checkbox]:checked + label {
-
+    input[type="checkbox"]:checked + label {
       &:before {
         background: $green;
         box-shadow: inset 0 1px 1px rgba(84, 152, 140, 0.5);
@@ -513,7 +505,7 @@
       }
     }
 
-    input[type=checkbox]:checked + label {
+    input[type="checkbox"]:checked + label {
       &:before {
         background: $green;
       }
@@ -535,7 +527,7 @@
       }
     }
 
-    input[type=checkbox]:checked + label {
+    input[type="checkbox"]:checked + label {
       &:after {
         background: $green;
       }
