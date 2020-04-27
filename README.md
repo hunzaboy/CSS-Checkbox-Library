@@ -30,9 +30,11 @@ That's it.
 
 ## Changelog
 
-1.5.1 : minor updates
-1.5.0 : Major changes, Size reduction and refactor thanks to @varunsridharan. (No breaking changes)
-.
-.
-.
-1.0.0 : First verison released
+### 1.5.1
+* minor updates
+
+### 1.5.0
+* Major changes, Size reduction and refactor thanks to @varunsridharan. (No breaking changes)
+
+### 1.0.0 
+#### First verison released
