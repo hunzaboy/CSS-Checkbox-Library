@@ -28,12 +28,11 @@ That's it.
 
 <a href='https://ko-fi.com/W7W112WHD' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi1.png?v=2' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
 
-## Todo
+## Changelog
 
-- [x] ~~Circles, Squares~~
-- [x] ~~Toggles~~
-- [x] HTML Code Snippet
-- [x] Added Different Sizes
-- [ ] Color Variations
-- [ ] More Animations
-- [ ] Just for Fun Toggles
+1.5.1 : minor updates
+1.5.0 : Major changes, Size reduction and refactor thanks to @varunsridharan. (No breaking changes)
+.
+.
+.
+1.0.0 : First verison released
