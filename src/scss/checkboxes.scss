@@ -45,9 +45,6 @@
   input[type="checkbox"] {
     &:checked {
       + label {
-        &:before {
-        }
-
         &:after {
           background: $green;
         }
@@ -61,3 +58,4 @@
 @import "circles";
 @import "squares";
 @import "sizes";
+@import "circle-square";

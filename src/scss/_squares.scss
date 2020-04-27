@@ -11,10 +11,6 @@
 .#{$checkbox} {
   &-square-1 {
     label {
-      &:before {
-        background: $base-color;
-      }
-
       &:after {
         left:       0.2em;
         top:        0.2em;
@@ -26,67 +22,19 @@
 
   &-square-2 {
     label {
-      &:before {
-        width:      $circle-style-width;
-        height:     $circle-style-height;
-        background: $base-color;
-      }
-
       &:after {
         left:       0.2em;
         top:        0.2em;
         background: $red;
-
-        animation:  switch-off-circle 0.2s ease-out;
-      }
-    }
-
-    input[type="checkbox"]:checked + label {
-      &:after {
-        width:     1em;
-        height:    1em;
-        top:       0;
-        left:      0;
-        animation: switch-on-circle 0.2s ease-out;
       }
     }
   }
 
   &-square-3 {
     label {
-      &:before {
-        background: $base-contrast;
-      }
-
       &:after {
-        left:       0.1em;
-        top:        0.1em;
         background: $red;
-        border:     0.1em solid $base-contrast;
         z-index:    2;
-      }
-    }
-  }
-
-  &-square-4 {
-    label {
-      &:before {
-        box-shadow: unset;
-      }
-
-      &:after {
-        background: transparent;
-        border:     0.2em solid $red;
-        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
-        animation:  stretch 0.2s ease-out;
-      }
-    }
-
-    input[type="checkbox"]:checked + label {
-      &:after {
-        border-color: $green;
-        background:   unset;
-        animation:    stretch 0.2s ease-out;
       }
     }
   }

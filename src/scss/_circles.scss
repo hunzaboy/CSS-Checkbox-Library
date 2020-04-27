@@ -15,75 +15,20 @@
 }
 
 .#{$checkbox} {
-  &-circle-1 {
-    label {
-      &:before {
-        background: $base-color;
-      }
-    }
-  }
-
   &-circle-2 {
     label {
-      &:before {
-        width:      $circle-style-width;
-        height:     $circle-style-height;
-        background: $base-color;
-      }
-
       &:after {
-        animation: switch-off-circle .2s ease-out;
-        z-index:   unset;
-      }
-    }
-
-    input[type="checkbox"]:checked + label {
-      &:after {
-        width:     1em;
-        height:    1em;
-        top:       0;
-        left:      0;
-        animation: switch-on-circle .2s ease-out;
-      }
-    }
-  }
-
-  &-circle-3 {
-    label {
-      &:before {
-        background: $base-contrast;
-      }
-
-      &:after {
-        left:   .1em;
-        top:    .1em;
-        border: .1em solid $base-contrast;
+        z-index: unset;
       }
     }
   }
 
   &-circle-4 {
     label {
-      &:before {
-        box-shadow: unset;
-      }
-
       &:after {
-        background: transparent;
-        border:     .2em solid $red;
-        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
-        animation:  stretch .2s ease-out;
-        left:       unset;
-        top:        unset;
-        z-index:    unset;
-      }
-    }
-
-    input[type="checkbox"]:checked + label {
-      &:after {
-        border-color: $green;
-        animation:    stretch .2s ease-out;
-        background:   unset;
+        left:    unset;
+        top:     unset;
+        z-index: unset;
       }
     }
   }
