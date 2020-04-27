@@ -1,7 +1,7 @@
 # CSS Checkbox Library [![npm version](https://badge.fury.io/js/css-checkbox-library.svg)](https://badge.fury.io/js/css-checkbox-library)
 
 
-<img src="https://raw.githubusercontent.com/hunzaboy/CSS-Checkbox-Library/master/screen.png">
+<img src="https://raw.githubusercontent.com/varunsridharan/CSS-Checkbox-Library/master/screen.gif">
 
 # Tons of Checkboxes
 A huge collection of pure css checkboxes.
