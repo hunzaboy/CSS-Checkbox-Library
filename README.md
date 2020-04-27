@@ -1,14 +1,17 @@
-<a href="https://hunzaboy.github.io/CSS-Checkbox-Library/">Click Here for Demo</a>
+# CSS Checkbox Library [![npm version](https://badge.fury.io/js/css-checkbox-library.svg)](https://badge.fury.io/js/css-checkbox-library)
 
-# Tons of Checkboxes
-A huge collection of pure css checkboxes.
 
 <img src="https://raw.githubusercontent.com/hunzaboy/CSS-Checkbox-Library/master/screen.png">
 
+# Tons of Checkboxes
+A huge collection of pure css checkboxes.
 <a href="https://hunzaboy.github.io/CSS-Checkbox-Library/">Click Here for Demo</a>
 
 ## Compatible
-IE9+, Chrome 49+, Firefox 52+, Safari 5+
+1. IE9+
+2. Chrome 49+
+3. Firefox 52+
+4. Safari 5+
 
 ## How to use
 1. Install via NPM  `npm i css-checkbox-library` or Download the Zip
@@ -30,9 +33,11 @@ That's it.
 
 ## Changelog
 
-1.5.1 : minor updates
-1.5.0 : Major changes, Size reduction and refactor thanks to @varunsridharan. (No breaking changes)
-.
-.
-.
-1.0.0 : First verison released
+### 1.5.1
+* minor updates
+
+### 1.5.0
+* Major changes, Size reduction and refactor thanks to @varunsridharan. (No breaking changes)
+
+### 1.0.0 
+#### First verison released
