@@ -5,11 +5,12 @@
 
   label {
     position: relative;
-    cursor:   pointer;
-    display:  block;
+    cursor: pointer;
+    display: block;
 
-    &:before, &:after {
-      content:  '';
+    &:before,
+    &:after {
+      content: "";
       position: absolute;
     }
 
@@ -18,26 +19,27 @@
     }
 
     &:after {
-      width:      0.6em;
-      height:     0.6em;
+      width: 0.6em;
+      height: 0.6em;
       transition: all $base-easing-speed * 2 $base-easeing;
     }
   }
 
   input[type="checkbox"] {
     position: absolute;
-    opacity:  0;
+    opacity: 0;
   }
 }
 
-[class^="#{$checkbox}-circle-"], [class^="#{$checkbox}-square-"] {
+[class^="#{$checkbox}-circle-"],
+[class^="#{$checkbox}-square-"] {
   label {
-    width:  $circle-style-width;
+    width: $circle-style-width;
     height: $circle-style-height;
 
     &:before {
-      width:      1em;
-      height:     1em;
+      width: 1em;
+      height: 1em;
       box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
     }
   }
