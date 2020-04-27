@@ -1,12 +1,13 @@
 [class^=#{$checkbox}] {
+  &.#{$checkbox}-small {
+    font-size: .5em;
+  }
 
-    &.#{$checkbox}-small {
-        font-size: .5em;
-    }
-    &.#{$checkbox}-large {
-        font-size: 1.5em;
-    }
-    &.#{$checkbox}-xlarge {
-        font-size: 2.5em;
-    }
+  &.#{$checkbox}-large {
+    font-size: 1.5em;
+  }
+
+  &.#{$checkbox}-xlarge {
+    font-size: 2.5em;
+  }
 }

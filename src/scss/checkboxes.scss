@@ -1,11 +1,61 @@
 @import "config";
 
-div[class^="#{$checkbox}-style-"] input[type=checkbox] {
+[class^="#{$checkbox}-"] {
+  font-size: $base-font-size;
+
+  label {
+    position: relative;
+    cursor:   pointer;
+    display:  block;
+
+    &:before, &:after {
+      content:  '';
+      position: absolute;
+    }
+
+    &:before {
+      transition: background $base-easing-speed 0.1s $base-easeing;
+    }
+
+    &:after {
+      width:      0.6em;
+      height:     0.6em;
+      transition: all $base-easing-speed * 2 $base-easeing;
+    }
+  }
+
+  input[type="checkbox"] {
     position: absolute;
-    opacity: 0;
+    opacity:  0;
+  }
 }
 
+[class^="#{$checkbox}-circle-"], [class^="#{$checkbox}-square-"] {
+  label {
+    width:  $circle-style-width;
+    height: $circle-style-height;
+
+    &:before {
+      width:      1em;
+      height:     1em;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  input[type="checkbox"] {
+    &:checked {
+      + label {
+        &:after {
+          background: $green;
+        }
+      }
+    }
+  }
+}
+
+@import "keyframes";
 @import "toggles";
 @import "circles";
 @import "squares";
 @import "sizes";
+@import "circle-square";

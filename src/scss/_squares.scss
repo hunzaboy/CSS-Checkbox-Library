@@ -1,186 +1,41 @@
-// .............. input circle 1
-.#{$checkbox}-square-1 {
-  font-size: $base-font-size;
-
-  input[type="checkbox"] {
-    position: absolute;
-    opacity: 0;
-  }
-
+[class^="#{$checkbox}-square-"] {
   label {
-    position: relative;
-    cursor: pointer;
-    display: block;
-    width: $circle-style-width;
-    height: $circle-style-height;
     &:before {
-      content: "";
-      position: absolute;
-      width: 1em;
-      height: 1em;
-      transition: background $base-easing-speed 0.1s $base-easeing;
-      background: $base-color;
-      box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
     }
-    &:after {
-      content: "";
-      position: absolute;
-      width: 0.6em;
-      height: 0.6em;
 
-      left: 0.2em;
-      top: 0.2em;
-      transition: all $base-easing-speed * 2 $base-easeing;
-      background: $red;
-      z-index: 2;
-    }
-  }
-
-  input[type="checkbox"]:checked + label {
     &:after {
-      background: $green;
     }
   }
 }
 
-// .............. input circle 2
-.#{$checkbox}-square-2 {
-  font-size: $base-font-size;
-
-  input[type="checkbox"] {
-    position: absolute;
-    opacity: 0;
-  }
-
-  label {
-    position: relative;
-    cursor: pointer;
-    display: block;
-    width: $circle-style-width;
-    height: $circle-style-height;
-    &:before {
-      content: "";
-      position: absolute;
-      width: $circle-style-width;
-      height: $circle-style-height;
-      transition: background $base-easing-speed 0.1s $base-easeing;
-      background: $base-color;
-      box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
-    }
-    &:after {
-      content: "";
-      position: absolute;
-      width: 0.6em;
-      height: 0.6em;
-
-      left: 0.2em;
-      top: 0.2em;
-      transition: all $base-easing-speed * 2 $base-easeing;
-      background: $red;
-
-      animation: switch-off-circle 0.2s ease-out;
+.#{$checkbox} {
+  &-square-1 {
+    label {
+      &:after {
+        left:       0.2em;
+        top:        0.2em;
+        background: $red;
+        z-index:    2;
+      }
     }
   }
 
-  input[type="checkbox"]:checked + label {
-    &:after {
-      background: $green;
-      width: 1em;
-      height: 1em;
-      top: 0;
-      left: 0;
-      animation: switch-on-circle 0.2s ease-out;
-    }
-  }
-}
-
-// .............. input circle 3
-.#{$checkbox}-square-3 {
-  font-size: $base-font-size;
-
-  input[type="checkbox"] {
-    position: absolute;
-    opacity: 0;
-  }
-
-  label {
-    position: relative;
-    cursor: pointer;
-    display: block;
-    width: $circle-style-width;
-    height: $circle-style-height;
-    &:before {
-      content: "";
-      position: absolute;
-      width: 1em;
-      height: 1em;
-      transition: background $base-easing-speed 0.1s $base-easeing;
-      background: $base-contrast;
-
-      box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
-    }
-    &:after {
-      content: "";
-      position: absolute;
-      width: 0.6em;
-      height: 0.6em;
-
-      left: 0.1em;
-      top: 0.1em;
-      transition: all $base-easing-speed * 2 $base-easeing;
-      background: $red;
-      border: 0.1em solid $base-contrast;
-      z-index: 2;
+  &-square-2 {
+    label {
+      &:after {
+        left:       0.2em;
+        top:        0.2em;
+        background: $red;
+      }
     }
   }
 
-  input[type="checkbox"]:checked + label {
-    &:after {
-      background: $green;
-    }
-  }
-}
-
-// .............. input circle 4
-.#{$checkbox}-square-4 {
-  font-size: $base-font-size;
-
-  input[type="checkbox"] {
-    position: absolute;
-    opacity: 0;
-  }
-
-  label {
-    position: relative;
-    cursor: pointer;
-    display: block;
-    width: $circle-style-width;
-    height: $circle-style-height;
-    &:before {
-      content: "";
-      position: absolute;
-      width: 1em;
-      height: 1em;
-      transition: background $base-easing-speed 0.1s $base-easeing;
-    }
-    &:after {
-      content: "";
-      position: absolute;
-      width: 0.6em;
-      height: 0.6em;
-
-      transition: all $base-easing-speed * 2 $base-easeing;
-      background: transparent;
-      border: 0.2em solid $red;
-      box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
-      animation: stretchback 0.2s ease-out;
-    }
-  }
-
-  input[type="checkbox"]:checked + label {
-    &:after {
-      border-color: $green;
-      animation: stretch 0.2s ease-out;
+  &-square-3 {
+    label {
+      &:after {
+        background: $red;
+        z-index:    2;
+      }
     }
   }
 }
