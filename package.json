@@ -1,12 +1,12 @@
 {
   "name": "css-checkbox-library",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "description": "Pure CSS Checkboxes.",
   "main": "dist/css/checkboxes.css",
   "style": "dist/css/checkboxes.css",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hunzaboy/CSS-Checkbox-Library.git"
+    "url": "https://github.com/hunzaboy/CSS-Checkbox-Library.git"
   },
   "author": "Aslam Shah",
   "license": "MIT",
