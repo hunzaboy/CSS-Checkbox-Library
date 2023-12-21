@@ -148,6 +148,10 @@
   background: #fcfff4;
 }
 
+[class^="ckbx-style-"] input[type="checkbox"]:focus + label:after {
+  background-color: #d7e4ee;
+}
+
 [class^="ckbx-style-"] input[type="checkbox"]:checked + label:before {
   background: #333;
 }
